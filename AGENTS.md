@@ -105,11 +105,6 @@ space-money/
 - Separate UI components from business logic
 - Feature-based folders: `features/[name]/{components,hooks,api,types}`
 
-**Keep README minimal** - README contains only:
-- Quick project description
-- Installation commands
-- How to run tests
-- Nothing else - detailed testing goes in implementation notes
 
 ## UAE/DIFC Compliance
 

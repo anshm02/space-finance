@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "results_id": "585e7743-9409-4c3b-9f2f-da12b5b0161d",
+  "message": "Data successfully retrieved",
+  "meta": null,
+  "timestamp": "2026-02-04T05:42:02.467193473Z",
+  "status_detail": null,
+  "refreshed_at": "2026-02-04T05:41:40.988Z",
+  "type": "balances",
+  "payload": {
+    "type": "balance",
+    "balance": 181782.43,
+    "currency_code": "AED",
+    "account_id": "11183a9a-7c62-4fee-8ac1-158b6de8a6f5",
+    "account_name": "Current Account",
+    "account_type": "CURRENT"
+  }
+}

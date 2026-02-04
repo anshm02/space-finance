@@ -1,0 +1,46 @@
+{
+  "status": "OK",
+  "payload": {
+    "type": "accounts",
+    "accounts": [
+      {
+        "account_id": "5a17ee77-13b8-4103-8613-ad3a2bfc2d72",
+        "name": "Current Account",
+        "currency_code": "AED",
+        "type": "CURRENT",
+        "iban": "AE590213158593367320825",
+        "account_number": "3158593367320825",
+        "credit": null
+      },
+      {
+        "account_id": "5b55252c-412f-41e2-b033-4c17a029e167",
+        "name": "Savings Account",
+        "currency_code": "AED",
+        "type": "SAVINGS",
+        "iban": "AE530348162192785504216",
+        "account_number": "8162192785504216",
+        "credit": null
+      },
+      {
+        "account_id": "92beabac-e0bc-44ca-8cd0-06da07bc1ab7",
+        "name": "Credit Account",
+        "currency_code": "AED",
+        "type": "CREDIT",
+        "iban": "AE160243609446267088408",
+        "account_number": "3609446267088408",
+        "credit": {
+          "card_number_last_four": "0571",
+          "limit": 803.79,
+          "next_payment_due_date": "2026-01-22",
+          "next_payment_due_amount": 446.83
+        }
+      }
+    ]
+  },
+  "results_id": "b79a4cf7-e2ff-4335-b9da-573af201c5cf",
+  "message": "Data successfully retrieved",
+  "meta": null,
+  "timestamp": "2026-02-01T22:43:05.692257674Z",
+  "type": "accounts",
+  "status_detail": null
+}
