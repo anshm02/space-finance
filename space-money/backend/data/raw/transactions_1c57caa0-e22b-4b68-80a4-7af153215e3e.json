@@ -1,0 +1,4435 @@
+{
+  "status": "OK",
+  "results_id": "5b807c33-4acb-49f6-9e9a-66f81b0861a3",
+  "message": "Data successfully retrieved",
+  "meta": null,
+  "timestamp": "2026-02-12T01:08:23.358720405Z",
+  "status_detail": null,
+  "refreshed_at": "2026-02-12T01:07:46.058Z",
+  "type": "transactions",
+  "payload": {
+    "type": "transactions",
+    "transactions": [
+      {
+        "id": "77dafda5-7c82-4d98-b438-901b7847c1e7",
+        "description": "ONLINE BANKING TRANSFER FROM - 0****** MILE CAR REPAIR REPAYMENT",
+        "amount": 372.53,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-14T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: MILE CAR REPAIR REPAYMENT",
+          "category": "TRANSPORT",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824344-232296935",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "8ea8fe97-73bb-4e10-949e-45fc9b598eb2",
+        "description": "ONLINE BANKING TRANSFER FROM - 0****** MILE CAR REPAIR REPAYMENT",
+        "amount": 90.19,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-11-14T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: MILE CAR REPAIR REPAYMENT",
+          "category": "TRANSPORT",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824344-1810100231",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d1bcaa33-3549-4fb4-83fc-971819cf7671",
+        "description": "INSTALLMENT PLAN EMI (11/12) DU (EITC) (969.85)",
+        "amount": -524.19,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-15T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INSTALLMENT PLAN EMI DU EITC",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.97,
+          "type": "TRANSFER",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824344-1840093476",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "e37ab4c8-1b5a-4389-9650-fb36f151256c",
+        "description": "REVERSAL OF LATE PAYMENT FEE CREDIT ADJUSTMENT",
+        "amount": 628.69,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-16T00:00:00Z",
+        "insights": {
+          "description_cleansed": "REVERSAL OF LATE PAYMENT FEE CREDIT ADJUSTMENT",
+          "category": "BANK_FEES_AND_CHARGES",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824344-1758704024",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "1090dad6-2871-4a81-9307-d4f9a1dea543",
+        "description": "MINISTRY OF ECONOMY ABU DHABI ARE",
+        "amount": -26.88,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-11-16T00:00:00Z",
+        "insights": {
+          "description_cleansed": "MINISTRY OF ECONOMY ABU DHABI ARE",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.95,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824344-1351076772",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "8f1dbd02-7222-4b7f-be23-78bb686e8742",
+        "description": "INTEREST Interest Payment/03****** Interest run",
+        "amount": 629.66,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INTEREST INTEREST PAYMENT INTEREST RUN",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--717758664",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d85a68c3-fe10-4e82-98e1-ea2d77c34567",
+        "description": "PROTECT PLUS PREMIUM REVERSAL",
+        "amount": 723.4,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-11-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PROTECT PLUS PREMIUM REVERSAL",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.22,
+          "type": "TRANSFER",
+          "type_confidence": 0.9
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--899374962",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "14c40172-c866-487c-9453-d9371d36ab75",
+        "description": "DVLA DRIVER ONLINE SWANSEA GBR",
+        "amount": -404.83,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-11-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DVLA DRIVER ONLINE SWANSEA GBR",
+          "category": "TRANSPORT",
+          "category_confidence": 0.9,
+          "type": "TRANSFER",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-1784249338",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d8e6c01a-da05-469d-8388-50070c120df5",
+        "description": "IT0**************1 SCBLUS33XXX QUANTUM TITAN GLOBAL TRADING LTD PLOT FUNDS TRANSFER QUANTUM TITAN GLOBALTRADING LTD /RF",
+        "amount": -191.06,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2025-11-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "QUANTUM TITAN GLOBAL TRADING LTD PLOT FUNDS TRANSFER QUANTUM TITAN GLOBALTRADING LTD RF",
+          "category": "TRANSFER",
+          "category_confidence": 0.37,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--425619172",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "951cc6a7-586a-4193-a1f7-2b0cfa3ec921",
+        "description": "AFRICAN AND EASTERN- DUBA",
+        "amount": -565.29,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2025-11-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AFRICAN AND EASTERN DUBA",
+          "category": "GROCERIES",
+          "category_confidence": 0.91,
+          "type": "CARD",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824344--64349296",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "14de2072-573c-4779-9ffd-bee8049d578c",
+        "description": "Visa Purchase 2**************74 CARIBOU COFFEE AED DUBAI AED 21 0504",
+        "amount": -296.5,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-22T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CARIBOU COFFEE DUBAI",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-1293600382",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "7a973dcf-d34e-4003-9043-10cce1ebf34d",
+        "description": "LOAN DRAWDOWN CONTRA ACCOUNT-124550******0001LOAN BOOKING-USER-35 7************************-N/A",
+        "amount": -172.49,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-11-22T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOAN DRAWDOWN CONTRA ACCOUNT BOOKING USER N A",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-49755113",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "8ffa1494-dc36-4c02-a8cf-3818cd82c09f",
+        "description": "NETFLIX.COM Amsterdam NL",
+        "amount": -241.91,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "NETFLIX COM AMSTERDAM NL",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.82
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--1775121163",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "39cfe251-3ea6-4061-9fe5-09c34a8fa63f",
+        "description": "INTEREST Interest Payment/03****** Interest run",
+        "amount": 298.05,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-25T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INTEREST INTEREST PAYMENT INTEREST RUN",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-587070619",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "bd16e0b9-600f-46a4-9e16-54a74fc36450",
+        "description": "PROTECT PLUS PREMIUM REVERSAL",
+        "amount": 90.69,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-26T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PROTECT PLUS PREMIUM REVERSAL",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.22,
+          "type": "TRANSFER",
+          "type_confidence": 0.9
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--1408530747",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "1cb0ff65-1c38-4ac1-8129-adff449bdc66",
+        "description": "PAYPAL *COURSERAINC 64 4029357733 USA",
+        "amount": -374.94,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-11-26T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PAYPAL COURSERAINC USA",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.29,
+          "type": "PAYPAL",
+          "type_confidence": 0.89
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--3873910",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "08de7467-2057-4f92-8fb4-07f069f5db69",
+        "description": "PROTECT PLUS PREMIUM REVERSAL",
+        "amount": 759.12,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-27T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PROTECT PLUS PREMIUM REVERSAL",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.22,
+          "type": "TRANSFER",
+          "type_confidence": 0.9
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-1122106586",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5016d73b-a9ff-4f3c-8aba-41357b59c64d",
+        "description": "PAYPAL *NINTENDO 4029357733 SGP",
+        "amount": -5.21,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-11-27T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PAYPAL NINTENDO SGP",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.47,
+          "type": "PAYPAL",
+          "type_confidence": 0.85
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--1956416148",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "92464f89-f8da-43e3-afce-e26bbebc2390",
+        "description": "Al Etihad Credit Burea http://www.ae AE",
+        "amount": -165.15,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-11-27T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AL ETIHAD CREDIT BUREA HTTP WWW AE AE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.83,
+          "type": "TRANSFER",
+          "type_confidence": 0.71
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-405026301",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f6d3773b-4d9c-4bfe-9d33-ada1573f33e5",
+        "description": "THE BODY SHOP ABUDHABI ARE",
+        "amount": -50.06,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2025-11-27T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE BODY SHOP ABUDHABI ARE",
+          "category": "RETAIL",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--765084804",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "6bbf2d70-c4c8-45ea-9ec8-0028a6b0b1ae",
+        "description": "POS-PURCHASE CARD NO.4******8 10060398 26-06-2019 THE NOODLE HOUSE-DIFC DUBAI AE",
+        "amount": -192.34,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-11-29T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE NOODLE HOUSE DIFC DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-515065758",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f99f3665-4ed7-4909-b277-bc236e87d39c",
+        "description": "NS: 052307930001C251349007854 University Students Rewards Account 2025-12-01",
+        "amount": 20000.0,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-01T00:00:00Z",
+        "insights": {
+          "description_cleansed": "NS UNIVERSITY STUDENTS REWARDS ACCOUNT",
+          "category": "EDUCATION",
+          "category_confidence": 0.39,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--400685556",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "80240f51-4335-4574-98c6-1b2402ae4190",
+        "description": "Local ATM Fees UAE SWITCH 00008707",
+        "amount": -334.58,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-01T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOCAL ATM FEES UAE SWITCH",
+          "category": "TRANSFER",
+          "category_confidence": 0.79,
+          "type": "TRANSFER",
+          "type_confidence": 0.64
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-65159952",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b9b61a2f-84c1-40db-99bb-57e5a923f7e5",
+        "description": "AMERICAN UNIVERSITY IN THE EMIRA DUBAI ARE",
+        "amount": -549.92,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-12-01T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMERICAN UNIVERSITY IN THE EMIRA DUBAI ARE",
+          "category": "EDUCATION",
+          "category_confidence": 0.7,
+          "type": "TRANSFER",
+          "type_confidence": 0.91
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-432465394",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "9f11f3fa-e9fa-40f3-973f-cd7339118838",
+        "description": "POS-PURCHASE CARD NO.4******8 10060398 26-06-2019 THE NOODLE HOUSE-DIFC DUBAI AE",
+        "amount": -834.02,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-02T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE NOODLE HOUSE DIFC DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-398591198",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "6de589de-c415-48e2-b51e-d5277ff8d92d",
+        "description": "TOP SHOP AL SHAYA CC 3895 VT****************4",
+        "amount": -510.16,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-02T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TOP SHOP AL SHAYA CC VT",
+          "category": "RETAIL",
+          "category_confidence": 0.94,
+          "type": "CARD",
+          "type_confidence": 0.39
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-134431",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "15fcd76c-bb4e-4a54-b307-930890378224",
+        "description": "DR ATM TRANSACTION CARD NO.4************2 864305 04-03-2020 500000.00-IDR CANGGU TENGAH BALI BALI:ID",
+        "amount": -29.18,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-12-02T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM CANGGU TENGAH BALI BALI INDONESIA",
+          "category": "TRANSFER",
+          "category_confidence": 1,
+          "type": "ATM",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--1463574636",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "be041064-7ea5-4ca0-bec2-d9a078cbcda5",
+        "description": "LOAN DRAWDOWN CONTRA ACCOUNT-124550******0001LOAN BOOKING-USER-35 76************************0",
+        "amount": -119.22,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-03T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOAN DRAWDOWN CONTRA ACCOUNT BOOKING USER",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-1042941679",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "006ebcf7-cb3a-450a-8030-9ba20a262843",
+        "description": "ONLINE BANKING TRANSFER TO 9XXXXXXXXXXX2 FOR CHARITY; BNK REF.-75016741",
+        "amount": -687.9,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-04T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO FOR CHARITY",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.38,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-889418827",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "6dc9a838-de97-428f-aa8d-026c81aa12bf",
+        "description": "AMERICAN UNIVERSITY IN THE EMIRA DUBAI ARE",
+        "amount": -518.54,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMERICAN UNIVERSITY IN THE EMIRA DUBAI ARE",
+          "category": "EDUCATION",
+          "category_confidence": 0.7,
+          "type": "TRANSFER",
+          "type_confidence": 0.91
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-675337458",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5b99bb8c-5dbb-4876-bac0-3270611c5905",
+        "description": "POS-PURCHASE CARD NO.4*************6311 115772 28-11-2019 46.90-AED DELIVEROO DMCC DUBAI:AE",
+        "amount": -776.9,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DELIVEROO DMCC DUBAI UNITED ARAB EMIRATES",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.89
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--2078781657",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "8ad5398a-caee-4872-bd2f-ebb63dde7c8e",
+        "description": "CHOITHRAM SAFA PARK DUBAI ARE",
+        "amount": -875.39,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-12-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHOITHRAM SAFA PARK DUBAI ARE",
+          "category": "GROCERIES",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.94
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-2089214145",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "4bb6e995-09b3-43bf-a606-c6bf105b39fb",
+        "description": "KICKSTARTER.COM BARCELONA ESP",
+        "amount": -380.28,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2025-12-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "KICKSTARTER COM BARCELONA ESP",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.49,
+          "type": "CARD",
+          "type_confidence": 0.76
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-1362909150",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "00c86a1d-0860-4475-9be5-1813e6c454dc",
+        "description": "CHILDREN CITY DUBAI ARE",
+        "amount": -15.07,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2025-12-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHILDREN CITY DUBAI ARE",
+          "category": "RETAIL",
+          "category_confidence": 0.5,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--1622920159",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "54a695c9-c029-48b9-bf08-d8904c4147bb",
+        "description": "ATM CASH DEPOSIT Lulu Karama Centre0466- 5*************5 06-03-2020 18:44 Value Date: 06/03/2020",
+        "amount": -133.26,
+        "currency_code": "AED",
+        "index": 5,
+        "pending": false,
+        "timestamp": "2025-12-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM CASH DEPOSIT LULU KARAMA VALUE DATE",
+          "category": "TRANSFER",
+          "category_confidence": 0.99,
+          "type": "ATM",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345--246800529",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "4bb47074-6784-4e84-8890-c8e5defe7fe5",
+        "description": "E-WALLET PAYMENT EWALLET PAYMENT 32696902 37000809927991 WWW.DSG.GO GOV.AE; BNK REF.-32696902",
+        "amount": -239.55,
+        "currency_code": "AED",
+        "index": 6,
+        "pending": false,
+        "timestamp": "2025-12-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "E WALLET PAYMENT EWALLET PAYMENT WWW DSG GO GOV AE",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.33,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824345-73002771",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "1513da10-8fd9-4cf7-a60b-d0657065850e",
+        "description": "IT0**************1 SCBLUS33XXX QUANTUM TITAN GLOBAL TRADING LTD PLOT FUNDS TRANSFER QUANTUM TITAN GLOBALTRADING LTD /RF",
+        "amount": -159.76,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-07T00:00:00Z",
+        "insights": {
+          "description_cleansed": "QUANTUM TITAN GLOBAL TRADING LTD PLOT FUNDS TRANSFER QUANTUM TITAN GLOBALTRADING LTD RF",
+          "category": "TRANSFER",
+          "category_confidence": 0.37,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-474058506",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "1bbf9f10-ee67-48ef-b426-fde458c8e24f",
+        "description": "UNIQLO KLCC KUALA LUMPUR MYS",
+        "amount": -441.65,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-10T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNIQLO KLCC KUALA LUMMYS",
+          "category": "RETAIL",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--213769953",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "59f0ca7d-07da-44d6-9397-367c3a31ac07",
+        "description": "POS-PURCHASE CARD NO.4******8 10060398 26-06-2019 THE NOODLE HOUSE-DIFC DUBAI AE",
+        "amount": -950.67,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-10T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE NOODLE HOUSE DIFC DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--1320814203",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "0825f6a2-7592-41fe-b43c-14409809a376",
+        "description": "ATM CASH DEPOSIT Lulu Karama Centre0466- 5***********6 31-01-2020 13:18 Value Date: 31/01/2020",
+        "amount": -174.77,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-14T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM CASH DEPOSIT LULU KARAMA VALUE DATE",
+          "category": "TRANSFER",
+          "category_confidence": 0.99,
+          "type": "ATM",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-1618841790",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "045773bd-8b0b-4828-a47a-e8beb135f649",
+        "description": "POS-PURCHASE CARD NO.4*****************7 521026 07-09-2020 130.00-AED SMART DUBAI GOVERNMENT DUBAI:AE",
+        "amount": -469.54,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-14T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SMART DUBAI GOVERNMENT DUBAI UNITED ARAB EMIRATES",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.97,
+          "type": "TRANSFER",
+          "type_confidence": 0.9
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-374791417",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "ed20c10d-ffdc-4327-816c-efa8e8ef7b32",
+        "description": "POS-PURCHASE CARD NO.4***********3 85100062 19-12-2019 UNDER ARMOUR DUBAI AE",
+        "amount": -195.67,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-19T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNDER ARMOUR DUBAI AE",
+          "category": "RETAIL",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-387877632",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "cbc5f392-74fd-48ed-a888-7e8d249611a7",
+        "description": "NS: 052307930001C251349007854 University Students Rewards Account 2025-12-20",
+        "amount": 20000.0,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "NS UNIVERSITY STUDENTS REWARDS ACCOUNT",
+          "category": "EDUCATION",
+          "category_confidence": 0.39,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-85726444",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "026a69a8-c2a0-4007-9f8b-42bf7d0275d7",
+        "description": "MCDONALDS-54017 ABU DHABI AE",
+        "amount": -500.75,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "MCDONALDS ABU DHABI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--1301417063",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "e9570d2b-5a4d-44a0-8097-f1e88bd754c5",
+        "description": "AMERICAN UNIVERSITY IN THE EMIRA DUBAI ARE",
+        "amount": -509.78,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-12-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMERICAN UNIVERSITY IN THE EMIRA DUBAI ARE",
+          "category": "EDUCATION",
+          "category_confidence": 0.7,
+          "type": "TRANSFER",
+          "type_confidence": 0.91
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-877631416",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "be81304e-3c72-45ef-a728-8fced8515d8a",
+        "description": "INWARD T/T /REF/MCR/PAYMENT OF MEDICAL COSTS REF 1****** BUPA INSURANCE SERVICES LIMITE",
+        "amount": -429.25,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-21T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INWARD T T REF MCR PAYMENT OF MEDICAL COSTS REF BUPA INSURANCE SERVICES LIMITE",
+          "category": "HEALTH_AND_WELLBEING",
+          "category_confidence": 0.55,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--1319285954",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "257ef0a0-5ead-4575-b0a0-d3d031f466b2",
+        "description": "CHEEKY MONKEYS PLAYLAN DUBAI ARE",
+        "amount": -437.53,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-21T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHEEKY MONKEYS PLAYLAN DUBAI ARE",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.87,
+          "type": "TRANSFER",
+          "type_confidence": 0.7
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-1737476293",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "3f4927db-246e-41f3-9155-d2f0685b7de1",
+        "description": "FACEBK *ROMANIANUNITED DONATE.FB.COM IRL",
+        "amount": -511.86,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-12-21T00:00:00Z",
+        "insights": {
+          "description_cleansed": "FACEBK ROMANIANUNITED DONATE FB COM IRL",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.78,
+          "type": "TRANSFER",
+          "type_confidence": 0.69
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-1934871507",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "72977fd2-158a-4237-b6af-bfa3fc224626",
+        "description": "PURCHASE TRXN. PIZZA HUT ENOC SPORTS DUBAI ARE 5*****************8 Value Date: 13/09/2020",
+        "amount": -776.56,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2025-12-21T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PURCHASE TRXN PIZZA HUT ENOC SPORTS DUBAI ARE VALUE DATE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--1313836089",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "9db82b67-9b97-4be1-9222-2207df87de27",
+        "description": "ONLINE BANKING PYMT-TEL ETISALAT NO.-0*******5 BNK REF.-7********1 TXNID.-1**************3",
+        "amount": -181.16,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-22T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PYMT TEL ETISALAT NO TXNID",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 1,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-2071541864",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "ce75cbad-d30f-45a0-bdc6-79492287bd68",
+        "description": "POS-PURCHASE CARD NO.4*************6311 115772 28-11-2019 46.90-AED DELIVEROO DMCC DUBAI:AE",
+        "amount": -637.3,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DELIVEROO DMCC DUBAI UNITED ARAB EMIRATES",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.89
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--362094609",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "80eea8bc-c5d7-40e7-8f9b-81a628fadb81",
+        "description": "THE BODY SHOP-AL MARYA ABU DHABI ARE",
+        "amount": -893.32,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-24T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE BODY SHOP AL MARYA ABU DHABI ARE",
+          "category": "RETAIL",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-1407258491",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a6dced67-f4e5-4128-94ff-95d0c42012df",
+        "description": "POS-PURCHASE CARD NO.4******6 10134514 04-05-2019 SSS-NIKE DUBAI AE",
+        "amount": -379.96,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-24T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SSS NIKE DUBAI AE",
+          "category": "RETAIL",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-931718089",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "10bcdebb-2e14-43ec-8ead-62c20145aebc",
+        "description": "AL ARRAB RESTAURANT-DUBAI DUBAI ARE",
+        "amount": -142.8,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-25T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AL ARRAB RESTAURANT DUBAI DUBAI ARE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--1240031475",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "116c79ed-e4eb-4f86-b052-94b4a75bec16",
+        "description": "10-11 AUSTURSTRATI REYKJAVIK ISL",
+        "amount": -643.39,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-25T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AUSTURSTRATI REYKJAVIK ISL",
+          "category": "RETAIL",
+          "category_confidence": 0.7,
+          "type": "TRANSFER",
+          "type_confidence": 0.62
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--1770670339",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b94f3ebe-38f5-43a8-bc8e-7cacf9220be0",
+        "description": "DUBAI SMART GOVERNMENT WWW.DSG.GOV.A ARE",
+        "amount": -413.9,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-26T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DUBAI SMART GOVERNMENT WWW DSG GOV A ARE",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--505538493",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "4119fbb6-d37d-4d95-82eb-38d5551e73bf",
+        "description": "POS-PURCHASE CARD NO.4******1 10098959 14-03-2020 SUMO SUSHI & BENTO DUBAI AE",
+        "amount": -112.59,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-26T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SUMO SUSHI BENTO DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346--1121600061",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "1c7bfb2a-4b7f-4551-a846-8e5a7352ee17",
+        "description": "POS-PURCHASE CARD NO.4***********7 619180 01-02-2020 100.00-AED SMART DUBAI GOVERNMENT DUBAI:AE",
+        "amount": -233.89,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-12-26T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SMART DUBAI GOVERNMENT DUBAI UNITED ARAB EMIRATES",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.97,
+          "type": "TRANSFER",
+          "type_confidence": 0.9
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-2084683015",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "7c088b46-fe2b-4e5d-b0aa-b66b47ae5622",
+        "description": "DEBIT CARD TXN AT SUNRISE CITY SP DUBAI 74-09-3590 16748053 4****************8",
+        "amount": -337.6,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-27T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DEBIT CARD TXN AT SUNRISE CITY SP DUBAI",
+          "category": "RETAIL",
+          "category_confidence": 0.82,
+          "type": "OTHER",
+          "type_confidence": 0.54
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-535739461",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "84b73a40-6c3f-4499-8068-e83daa9d32bc",
+        "description": "POS-PURCHASE CARD NO.4**************5 253138 18-02-2020 7.99-GBP AMAZON PRIME*KC3OI0QX5 AM AMZN.CO.UK/PM:LU",
+        "amount": -480.67,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-27T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMAZON PRIME AM AMZN CO UK PM LUXEMBOURG",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.8,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-1485556335",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f14026b4-86e5-4871-81f1-4303fef86a4a",
+        "description": "POS-PURCHASE CARD NO.4***********7 6****2 31-03-2020 250.00-USD PROMETRIC *EXAM FEE 800-853-6769:US",
+        "amount": -282.36,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-28T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PROMETRIC EXAM FEE UNITED STATES",
+          "category": "EDUCATION",
+          "category_confidence": 0.28,
+          "type": "TRANSFER",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-1159965089",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "3592fe2a-ee74-4cb2-9685-65d5d259c9a4",
+        "description": "POS-PURCHASE CARD NO.4******6 10054652 25-03-2020 SUMO SUSHI & BENTO DUBAI AE",
+        "amount": -41.52,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-28T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SUMO SUSHI BENTO DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-1895697924",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a74d6200-94d8-49be-bba3-75cfc777a866",
+        "description": "ONLINE BANKING TRANSFER TO - 1XXXXXXXXX1 ZAKAT AND FITR 2020; BNK REF.- 77388927",
+        "amount": -602.57,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-12-28T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO ZAKAT AND FITR",
+          "category": "TRANSFER",
+          "category_confidence": 0.3,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-938391372",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5b10a8fc-870c-44aa-8c01-44b9fb6b2a30",
+        "description": "Visa Purchase 2**************74 CARIBOU COFFEE AED DUBAI AED 21 0504",
+        "amount": -531.25,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2025-12-28T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CARIBOU COFFEE DUBAI",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-206434034",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "54ad8b2d-04f2-48fa-84b4-987103ccaa3b",
+        "description": "ATM CASH DEPOSIT Lulu Karama Centre0466- 5*************5 06-03-2020 18:44 Value Date: 06/03/2020",
+        "amount": -19.53,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2025-12-28T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM CASH DEPOSIT LULU KARAMA VALUE DATE",
+          "category": "TRANSFER",
+          "category_confidence": 0.99,
+          "type": "ATM",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824346-2117004340",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "e967649c-f5ba-4b03-b8b5-ed8755681c04",
+        "description": "ONLINE BANKING TRANSFER TO 9XXXXXXXXXXX2 FOR CHARITY MEDICAL; BNK REF.-6904 9066",
+        "amount": -267.11,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-29T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO FOR CHARITY MEDICAL",
+          "category": "HEALTH_AND_WELLBEING",
+          "category_confidence": 0.73,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--532945914",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "cff4db96-dc42-4f7a-ac62-67a8e4e2e233",
+        "description": "ONLINE BANKING TRANSFER TO 9XXXXXXXXXXX2 FOR CHARITY; BNK REF.-75016741",
+        "amount": -131.25,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-29T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO FOR CHARITY",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.38,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-828738417",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c0d431d6-2157-4fdb-8d03-84d65e2288cd",
+        "description": "STARBUCKS-D582 AL SHAY DUBAI ARE",
+        "amount": -831.76,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2025-12-29T00:00:00Z",
+        "insights": {
+          "description_cleansed": "STARBUCKS AL SHAY DUBAI ARE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-451257260",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "662deb2b-fec9-47f9-8651-86d9d5ba7313",
+        "description": "INSTALLMENT PLAN EMI (07/12) AAFAQ ISLAMIC FINANCE (8500.00)",
+        "amount": -388.45,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2025-12-29T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INSTALLMENT PLAN EMI AAFAQ ISLAMIC FINANCE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-1609818017",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "31b19c23-3aa6-4851-9122-8a7493c70e8b",
+        "description": "ONLINE BANKING TRANSFER TO 9XXXXXXXXXXX2 FOR CHARITY; BNK REF.-75016741",
+        "amount": -638.65,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2025-12-31T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO FOR CHARITY",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.38,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-219325338",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "7824bd4e-e306-4e66-a2c6-faa7bf90e9fb",
+        "description": "SHAKE N SAVE-DR TO - 0****************2; BNK REF.-85924879",
+        "amount": -229.87,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2025-12-31T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SHAKE N SAVE DR TO",
+          "category": "TRANSFER",
+          "category_confidence": 0.55,
+          "type": "TRANSFER",
+          "type_confidence": 0.49
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--1688376963",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "eb170191-9f4d-4579-b378-68a82428a6cc",
+        "description": "POS-PURCHASE CARD NO.4*************6311 115772 28-11-2019 46.90-AED DELIVEROO DMCC DUBAI:AE",
+        "amount": -1057.67,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-03T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DELIVEROO DMCC DUBAI UNITED ARAB EMIRATES",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.89
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--1134291312",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "0cf8e700-2adf-40ac-b75f-0acdbe37c55a",
+        "description": "KIDS CARE NURSERY DMCC DUBAI ARE",
+        "amount": -767.94,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-05T00:00:00Z",
+        "insights": {
+          "description_cleansed": "KIDS CARE NURSERY DMCC DUBAI ARE",
+          "category": "EDUCATION",
+          "category_confidence": 0.58,
+          "type": "TRANSFER",
+          "type_confidence": 0.71
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-107560503",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "2c8c5c38-8c89-40b7-b076-1a3015efe9a5",
+        "description": "AFRICAN AND EASTERN N/E L DUBAI ARE",
+        "amount": -297.08,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-05T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AFRICAN AND EASTERN N E L DUBAI ARE",
+          "category": "GROCERIES",
+          "category_confidence": 0.94,
+          "type": "CARD",
+          "type_confidence": 0.95
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-350258751",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "6beddf1e-d18f-460e-82fe-2323fb4aebce",
+        "description": "YALLA GIVE DUBAI ARE",
+        "amount": -440.63,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "YALLA GIVE DUBAI ARE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.19,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--702614306",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5f5a709b-c6d4-44b2-96d9-fa4bd125837d",
+        "description": "POS-PURCHASE CARD NO.4***********6 10321149 04-08-2020 ZAATER W ZEIT DUBAI AE",
+        "amount": -372.39,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZAATER W ZEIT DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-677604118",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "18c6f209-7b94-4a71-b676-3a363009de28",
+        "description": "Fee Debit- International Card Delivery",
+        "amount": -63.56,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "FEE DEBIT INTERNATIONAL CARD DELIVERY",
+          "category": "BANK_FEES_AND_CHARGES",
+          "category_confidence": 0.3,
+          "type": "TRANSFER",
+          "type_confidence": 0.81
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-1451883577",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f77c489c-46d1-4009-b191-fc39c444e381",
+        "description": "ONLINE BANKING TRANSFER TO - 3XXXXXXXXXXX1 ZAKAT BNK REF NO - BK48522948",
+        "amount": -681.93,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-01-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO ZAKAT NO",
+          "category": "TRANSFER",
+          "category_confidence": 0.81,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-275980449",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "ec873705-9577-46b4-877d-2bf4348cc162",
+        "description": "ONLINE BANKING TRANSFER TO - 1XXXXXXXXXX1 ZAKAT 2019; BNK REF.-48946188",
+        "amount": -710.83,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2026-01-06T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO ZAKAT",
+          "category": "TRANSFER",
+          "category_confidence": 0.74,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-1142549654",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "3a41a20b-4f59-4f64-a8f4-dac4ec9dc3c0",
+        "description": "AFRICAN AND EASTERN N/E L DUBAI ARE",
+        "amount": -118.45,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-07T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AFRICAN AND EASTERN N E L DUBAI ARE",
+          "category": "GROCERIES",
+          "category_confidence": 0.94,
+          "type": "CARD",
+          "type_confidence": 0.95
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--533817174",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f4ba7b6b-9c75-4924-9602-216e9dd63f30",
+        "description": "THE BODY SHOP ABUDHABI ARE",
+        "amount": -55.62,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-07T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE BODY SHOP ABUDHABI ARE",
+          "category": "RETAIL",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--1552531097",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d0a7cb05-5680-423d-9922-1f158dd423ab",
+        "description": "INSTALLMENT PLAN EMI (05/12) VIRGIN MOBILE UAE(EITC (1524.60)",
+        "amount": -33.3,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-08T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INSTALLMENT PLAN EMI VIRGIN MOBILE UAE EITC",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.8,
+          "type": "TRANSFER",
+          "type_confidence": 0.94
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--1005161337",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "112a8dd2-958c-47a6-86fc-2c4fea5f3d16",
+        "description": "POS-PURCHASE CARD NO.4*****************0 120907 12-02-2020 3.69-AED APPLE.COM/BILL ITUNES.COM:IE",
+        "amount": -231.26,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-08T00:00:00Z",
+        "insights": {
+          "description_cleansed": "APPLE COM BILL ITUNES COM IRELAND",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.66,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--1807283456",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "dcc695fe-0204-46e1-be2c-f284df035cfa",
+        "description": "PURCHASE TRXN. PIZZA HUT ENOC SPORTS DUBAI ARE 5********8 Value Date: 14/09/2020",
+        "amount": -476.03,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-08T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PURCHASE TRXN PIZZA HUT ENOC SPORTS DUBAI ARE VALUE DATE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--656071465",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c1e26079-a8d8-46db-844e-a5a830486cbb",
+        "description": "DVLA DRIVER ONLINE SWANSEA GBR",
+        "amount": -1285.82,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-01-08T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DVLA DRIVER ONLINE SWANSEA GBR",
+          "category": "TRANSPORT",
+          "category_confidence": 0.9,
+          "type": "TRANSFER",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-725305836",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "2cc73eac-9aa4-4a03-991b-729295c97983",
+        "description": "DANUBE FOODSTUFF JEDDAH SAU",
+        "amount": -197.6,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2026-01-08T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DANUBE FOODSTUFF JEDDAH SAU",
+          "category": "RETAIL",
+          "category_confidence": 0.61,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-699173381",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c5cfee73-6802-4c9b-be3f-e5e23b9022f1",
+        "description": "AMZN MKTP US*3L6D01Z13 AMZN.COM/BILL USA",
+        "amount": -565.3,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-09T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMZN MKTP US AMZN COM BILL USA",
+          "category": "RETAIL",
+          "category_confidence": 0.9,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347--584359074",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "90dbd075-361d-456e-8275-16ce04f112e7",
+        "description": "CARREFOUR DUBAI AR",
+        "amount": -283.38,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-09T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CARREFOUR DUBAI AR",
+          "category": "GROCERIES",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-26745328",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "401379c7-f8f6-43af-97cf-5bb0c42a1ac9",
+        "description": "AMZN MKTP US*3L6D01Z13 AMZN.COM/BILL USA",
+        "amount": -318.04,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-09T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMZN MKTP US AMZN COM BILL USA",
+          "category": "RETAIL",
+          "category_confidence": 0.9,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824347-1520541170",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "63c77e79-67ab-4287-a558-8eefe8aa6428",
+        "description": "AE2BT20032300254 IBANKING TRF FROM 1**********1",
+        "amount": -306.75,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-10T00:00:00Z",
+        "insights": {
+          "description_cleansed": "IBANKING TRF FROM",
+          "category": "TRANSFER",
+          "category_confidence": 0.56,
+          "type": "TRANSFER",
+          "type_confidence": 0.93
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-357856160",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "32bb4f6a-05b8-41c3-a938-4bc901ef7a81",
+        "description": "POS-PURCHASE CARD NO.4********2 90*****77 11-09-2020 ZAATAR W ZEIT DUBAI AE",
+        "amount": -2.18,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-10T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZAATAR W ZEIT DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-1609541123",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "59212530-92fa-44b3-aae4-31f7784bc517",
+        "description": "SHAKE N SAVE-DR TO - 0****************2; BNK REF.-85924879",
+        "amount": -29.41,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-10T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SHAKE N SAVE DR TO",
+          "category": "TRANSFER",
+          "category_confidence": 0.55,
+          "type": "TRANSFER",
+          "type_confidence": 0.49
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-507926090",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "0e8b724a-e234-4471-814f-050ee801d1b7",
+        "description": "LOAN DRAWDOWN CONTRA ACCOUNT-124550******0001LOAN BOOKING-USER-35 76************************0",
+        "amount": -136.32,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-11T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOAN DRAWDOWN CONTRA ACCOUNT BOOKING USER",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1437993426",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "907b0c7e-ad41-436c-9853-3efb4e493363",
+        "description": "TELEGRAPHIC TRF REF NUM:O0*********1 Cravia Inc LLC",
+        "amount": -69.38,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-11T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: CRAVIA INC LLC",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.9,
+          "type": "TRANSFER",
+          "type_confidence": 0.76
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-170313375",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c1f9031e-1491-4bfe-b16e-065e61fd9ce8",
+        "description": "ESSO CONVENIENCE 37897 WEST VANCOUVE CAN",
+        "amount": -206.13,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-11T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ESSO CONVENIENCE WEST VANCOUVE CAN",
+          "category": "EDUCATION",
+          "category_confidence": 0.25,
+          "type": "TRANSFER",
+          "type_confidence": 0.96
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1500794886",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "afabac7b-4791-4d24-a617-ccd51ee98479",
+        "description": "PAYPAL *PLAYSTATION 35314369001 GBR",
+        "amount": -368.72,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-01-11T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PAYPAL PLAYSTATION GBR",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.87,
+          "type": "PAYPAL",
+          "type_confidence": 0.92
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1219879565",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "428d0bf8-f07b-42d5-aace-e87ce5c80ff9",
+        "description": "SHAKE N SAVE-DR TO - 0****************2; BNK REF.-85924879",
+        "amount": -244.16,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SHAKE N SAVE DR TO",
+          "category": "TRANSFER",
+          "category_confidence": 0.55,
+          "type": "TRANSFER",
+          "type_confidence": 0.49
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--905081617",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "edd0c685-43d0-4fe7-b5da-b2ce742e41ff",
+        "description": "NETFLIX.COM AMSTERDAM NLD",
+        "amount": -279.17,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "NETFLIX COM AMSTERDAM NLD",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.96
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-2008884400",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "0ef35e03-96a4-42fe-863e-672299a1cef0",
+        "description": "AMERICAN SCHOOL DUBAI DUBAI ARE",
+        "amount": -1265.38,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMERICAN SCHOOL DUBAI DUBAI ARE",
+          "category": "EDUCATION",
+          "category_confidence": 0.88,
+          "type": "CARD",
+          "type_confidence": 0.63
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-1530399183",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f4f0c247-c4b4-492f-89fa-0992504cb405",
+        "description": "CINEMA CITY LLC ARE",
+        "amount": -259.6,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-01-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CINEMA CITY LLC ARE",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.64
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-1629479926",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "76b3aa4d-5253-4de3-94cb-06da373cd6d8",
+        "description": "POS-PURCHASE CARD NO.4********2 90*****77 11-09-2020 ZAATAR W ZEIT DUBAI AE",
+        "amount": -159.15,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-13T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZAATAR W ZEIT DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1476975259",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "561d63cc-257f-4e74-8a03-1cb44b57408f",
+        "description": "ONLINE BANKING PYMT-TEL ETISALAT NO.-0*******5 BNK REF.-7********1 TXNID.-1**************3",
+        "amount": -95.58,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-13T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PYMT TEL ETISALAT NO TXNID",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 1,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-997374392",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f7f7db91-3c28-4e34-abc8-bc28731b7c52",
+        "description": "Local ATM Fees UAE SWITCH 00008707",
+        "amount": -453.05,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-15T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOCAL ATM FEES UAE SWITCH",
+          "category": "TRANSFER",
+          "category_confidence": 0.79,
+          "type": "TRANSFER",
+          "type_confidence": 0.64
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1352607257",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "7e21830a-cf4e-4832-9ba6-9339b42c2070",
+        "description": "CHOITHRAM AL RAIS DUBAI ARE",
+        "amount": -127.51,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-15T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHOITHRAM AL RAIS DUBAI ARE",
+          "category": "GROCERIES",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1004762247",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "1ce72e72-14b0-4ae7-bea8-7ae97479aa49",
+        "description": "UNDER ARMOUR CHEERS-TIDE BALTIMORE USA",
+        "amount": -243.58,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-15T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNDER ARMOUR CHEERS TIDE BALTIMORE USA",
+          "category": "RETAIL",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.91
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1970099404",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "8f974a28-07a5-4b2b-a2a8-ab317062edb9",
+        "description": "POS-PURCHASE CARD NO.4***********7 6****2 31-03-2020 250.00-USD PROMETRIC *EXAM FEE 800-853-6769:US",
+        "amount": -310.86,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-01-15T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PROMETRIC EXAM FEE UNITED STATES",
+          "category": "EDUCATION",
+          "category_confidence": 0.28,
+          "type": "TRANSFER",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-817458772",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5aa15740-9e8f-42e1-88fa-25e956d9536f",
+        "description": "AMERICAN UNIVERSITY IN THE EMIRA DUBAI ARE",
+        "amount": -914.13,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2026-01-15T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMERICAN UNIVERSITY IN THE EMIRA DUBAI ARE",
+          "category": "EDUCATION",
+          "category_confidence": 0.7,
+          "type": "TRANSFER",
+          "type_confidence": 0.91
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--639772547",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "33836cba-24a8-400a-8388-00d64654ba2f",
+        "description": "POS-PURCHASE CARD NO.4******8 10060398 26-06-2019 THE NOODLE HOUSE-DIFC DUBAI AE",
+        "amount": -130.61,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-17T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE NOODLE HOUSE DIFC DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1911469638",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c8b1b8e7-88a1-4b0d-9ed8-26e4caecff10",
+        "description": "AMAZON PRIME*2629F8ZP5 AM AMZN.CO.UK/PM LUX",
+        "amount": -302.46,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-17T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMAZON PRIME AM AMZN CO UK PM LUX",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.79,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--354622707",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f5c1c90e-d134-47c3-af0e-43a3fe7b4411",
+        "description": "POS-PURCHASE CARD NO.4*******7 746727 20-07-2020 54.00-AED ZOMATO MEDIA PRIVATE LIMI DUBAI:AE",
+        "amount": -1183.93,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-17T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZOMATO MEDIA PRIVATE LIMI DUBAI UNITED ARAB EMIRATES",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.85,
+          "type": "CARD",
+          "type_confidence": 0.94
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--155352714",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b36a0227-8e3d-44ce-8e58-c99c3d4f4ea3",
+        "description": "POS-PURCHASE CARD NO.4******1 10319244 28-06-2020 ZUMA RESTAURANTS LLC DUBAI AE",
+        "amount": -26.17,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-01-17T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZUMA RESTAURANTS LLC DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-58133589",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d9ae4fae-bf24-4bb2-b89e-cfcd3d426d75",
+        "description": "TELEGRAPHIC TRF REF NUM:O0*********1 Cravia Inc LLC",
+        "amount": -17.52,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2026-01-17T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: CRAVIA INC LLC",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.9,
+          "type": "TRANSFER",
+          "type_confidence": 0.76
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348--1698014081",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "1fbbc85e-5bc0-46ed-b236-67aefc48c70c",
+        "description": "ALETIHAD CREDIT BUREAU ABU DHABI AE",
+        "amount": -625.36,
+        "currency_code": "AED",
+        "index": 5,
+        "pending": false,
+        "timestamp": "2026-01-17T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ALETIHAD CREDIT BUREAU ABU DHABI AE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.96,
+          "type": "TRANSFER",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-1360484451",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "3ef15683-157a-411a-8adc-ae4bbb1b77b8",
+        "description": "CHILDREN CITY DUBAI ARE",
+        "amount": -224.81,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-18T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHILDREN CITY DUBAI ARE",
+          "category": "RETAIL",
+          "category_confidence": 0.5,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824348-265180716",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "497afa7b-ca9d-44cd-98d6-72aab59a2eae",
+        "description": "DUBAI SMART GOVERNMENT WWW.DSG.GOV.A ARE",
+        "amount": -249.84,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DUBAI SMART GOVERNMENT WWW DSG GOV A ARE",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824349-1063983206",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "ade347b8-d793-4c8e-bd02-78ed6de9aaac",
+        "description": "ONLINE BANKING TRANSFER TO - 1XXXXXXXXXX1 ZAKAT 2019; BNK REF.-48946188",
+        "amount": -830.0,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO ZAKAT",
+          "category": "TRANSFER",
+          "category_confidence": 0.74,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824349--2102915704",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5b24179a-f3b2-4b8d-8dbd-f7be20c5694d",
+        "description": "SHAKE N SAVE-DR TO - 08***********2; BNK REF.-58982819",
+        "amount": -265.04,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SHAKE N SAVE DR TO",
+          "category": "TRANSFER",
+          "category_confidence": 0.55,
+          "type": "TRANSFER",
+          "type_confidence": 0.49
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824349--1094830859",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "8af03f69-f2eb-4011-afd9-d532545bedad",
+        "description": "10-11 AUSTURSTRATI REYKJAVIK ISL",
+        "amount": -528.24,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-01-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AUSTURSTRATI REYKJAVIK ISL",
+          "category": "RETAIL",
+          "category_confidence": 0.7,
+          "type": "TRANSFER",
+          "type_confidence": 0.62
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824349--252823946",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "2138be85-9b9e-4cba-a20d-cb98a8b2b8a9",
+        "description": "INSTALLMENT PLAN EMI (11/12) DU (EITC) (969.85)",
+        "amount": -378.97,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2026-01-20T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INSTALLMENT PLAN EMI DU EITC",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.97,
+          "type": "TRANSFER",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824349--373430809",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "943a5f75-d6b1-4049-ae16-be6adb5ae7f2",
+        "description": "YALLA GIVE- DUBAI- ARE",
+        "amount": 9167.18,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-21T00:00:00Z",
+        "insights": {
+          "description_cleansed": "YALLA GIVE DUBAI ARE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.19,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824349-1803714408",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f98dfc98-8f5c-4617-965c-3334c7c93339",
+        "description": "POS-PURCHASE CARD NO.4******8 10117708 03-06-2019 ZARA - KASWA TRADING LLC DUBAI AE",
+        "amount": -451.49,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-21T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZARA KASWA TRADING LLC DUBAI AE",
+          "category": "RETAIL",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127824349--1617120499",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "95d906f3-7264-4d2e-a7fc-6e8927b855af",
+        "description": "DANUBE FOODSTUFF JEDDAH SAU",
+        "amount": -437.97,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DANUBE FOODSTUFF JEDDAH SAU",
+          "category": "RETAIL",
+          "category_confidence": 0.61,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--1930186515",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "79c1ee92-555e-44d4-aa61-dd6d231a6b05",
+        "description": "SUSHI CENTRAL RESTAURANT AUH ARE",
+        "amount": -469.55,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SUSHI CENTRAL RESTAURANT AUH ARE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1127024718",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "1595b249-f70d-4e45-8157-190bfab40d70",
+        "description": "POS-PURCHASE CARD NO.4******7 690415 10-07-2020 106.00-AED ZOMATO MEDIA PRIVATE LIMI DUBAI:AE",
+        "amount": -483.92,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZOMATO MEDIA PRIVATE LIMI DUBAI UNITED ARAB EMIRATES",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.85,
+          "type": "CARD",
+          "type_confidence": 0.94
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--760208497",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "933d742c-055e-4f67-98a5-f4912d6e1ba0",
+        "description": "CHEEKY MONKEYS PLAYLAN DUBAI ARE",
+        "amount": -294.63,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHEEKY MONKEYS PLAYLAN DUBAI ARE",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.87,
+          "type": "TRANSFER",
+          "type_confidence": 0.7
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--1163588638",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "226e9a96-2b62-4aa4-9a72-9dc33c6cf3a3",
+        "description": "NS: EXTN2N67UQ2VKEZE Ministry of Labor and Social Development RJHISARI8XKDKVU7 203310079013034 / WELFARE / 2026-01-23",
+        "amount": 20000.0,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "NS MINISTRY OF LABOR AND SOCIAL DEVELOPMENT WELFARE",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.93,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1478893858",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "6d39a52b-616f-4e0e-9032-8b7cd151fa6c",
+        "description": "PAYPAL *COURSERAINC 64 4029357733 USA",
+        "amount": -635.27,
+        "currency_code": "AED",
+        "index": 5,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PAYPAL COURSERAINC USA",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.29,
+          "type": "PAYPAL",
+          "type_confidence": 0.89
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-2018501761",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b2a3d600-b184-480b-90b4-373b23d87c87",
+        "description": "UNDER ARMOUR CHEERS-TIDE BALTIMORE USA",
+        "amount": -267.12,
+        "currency_code": "AED",
+        "index": 6,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNDER ARMOUR CHEERS TIDE BALTIMORE USA",
+          "category": "RETAIL",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.91
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--1094765985",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "6754560d-c967-4d44-b5f5-45afefef8edb",
+        "description": "ATM CASH DEPOSIT Lulu Karama Centre0466- 5***********6 31-01-2020 13:18 Value Date: 31/01/2020",
+        "amount": -429.53,
+        "currency_code": "AED",
+        "index": 7,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM CASH DEPOSIT LULU KARAMA VALUE DATE",
+          "category": "TRANSFER",
+          "category_confidence": 0.99,
+          "type": "ATM",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-2066179537",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b633b91a-4586-4bc9-ac3e-ab19c6bd70fd",
+        "description": "LOAN DRAWDOWN CONTRA ACCOUNT-124550******0001LOAN BOOKING-USER-35 7************************-N/A",
+        "amount": -5.32,
+        "currency_code": "AED",
+        "index": 8,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOAN DRAWDOWN CONTRA ACCOUNT BOOKING USER N A",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-1444133528",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "0cd0daf3-9523-4acc-9f10-9d0acb13b1c8",
+        "description": "LOAN DRAWDOWN CONTRA ACCOUNT-124550******0001LOAN BOOKING-USER-35 7*******************************",
+        "amount": -459.37,
+        "currency_code": "AED",
+        "index": 9,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOAN DRAWDOWN CONTRA ACCOUNT BOOKING USER",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-68306602",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "4aa1d95e-f713-4db4-bb08-0bb37a8f2302",
+        "description": "POS-PURCHASE CARD NO.4*********2 10316538 30-05-2020 ZUMA RESTAURANTS LLC DUBAI AE",
+        "amount": -79.52,
+        "currency_code": "AED",
+        "index": 10,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZUMA RESTAURANTS LLC DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-350267976",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "ee9f86c4-4227-426f-bdf9-b60c69a8bc4c",
+        "description": "DR ATM TRANSACTION CARD NO.4************2 864305 04-03-2020 500000.00-IDR CANGGU TENGAH BALI BALI:ID",
+        "amount": -200.8,
+        "currency_code": "AED",
+        "index": 11,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM CANGGU TENGAH BALI BALI INDONESIA",
+          "category": "TRANSFER",
+          "category_confidence": 1,
+          "type": "ATM",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--85599260",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "4449004c-da93-445f-b4ec-c083826b2a74",
+        "description": "Visa Purchase 2**************74 CARIBOU COFFEE AED DUBAI AED 21 0504",
+        "amount": -718.26,
+        "currency_code": "AED",
+        "index": 12,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CARIBOU COFFEE DUBAI",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-1563855130",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5e7f8dc7-dc6e-411c-8146-6348d31b1948",
+        "description": "POS-PURCHASE CARD NO.4***********6 10321149 04-08-2020 ZAATER W ZEIT DUBAI AE",
+        "amount": -244.79,
+        "currency_code": "AED",
+        "index": 13,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZAATER W ZEIT DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681--184859704",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a63174c2-930e-4c39-958c-50febce5d76c",
+        "description": "CARREFOUR EXPRESS F29 GDANSK POL",
+        "amount": -341.71,
+        "currency_code": "AED",
+        "index": 14,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CARREFOUR EXPRESS GDANSK POL",
+          "category": "GROCERIES",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1615198085",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f85c2088-901b-4767-ab4a-8e07afa52789",
+        "description": "UNIQLO KLCC KUALA LUMPUR MYS",
+        "amount": -114.08,
+        "currency_code": "AED",
+        "index": 15,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNIQLO KLCC KUALA LUMMYS",
+          "category": "RETAIL",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-1696128429",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "e1b67bcb-457d-4e68-b35f-bbbc63402af3",
+        "description": "AMAZON.COM*QT27F2J73 AMZN.COM/BILL USA",
+        "amount": -299.42,
+        "currency_code": "AED",
+        "index": 16,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMAZON COM AMZN COM BILL USA",
+          "category": "RETAIL",
+          "category_confidence": 0.58,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--236565583",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5af0b61e-9fcc-4bb2-b61e-8d3556472873",
+        "description": "FEE REVERSAL LATE PAYMENT FEE",
+        "amount": 761.75,
+        "currency_code": "AED",
+        "index": 17,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "FEE REVERSAL LATE PAYMENT FEE",
+          "category": "BANK_FEES_AND_CHARGES",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-288422780",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "4a071838-4b74-45b8-9386-6cdb159d7acc",
+        "description": "THE BODY SHOP-AL MARYA ABU DHABI ARE",
+        "amount": -275.86,
+        "currency_code": "AED",
+        "index": 18,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE BODY SHOP AL MARYA ABU DHABI ARE",
+          "category": "RETAIL",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-2039780090",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "bb52e149-091a-42f1-b32d-71780b4fe067",
+        "description": "INSTALLMENT PLAN EMI (08/12) AAFAQ ISLAMIC FINANCE (8500.00)",
+        "amount": -74.67,
+        "currency_code": "AED",
+        "index": 19,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INSTALLMENT PLAN EMI AAFAQ ISLAMIC FINANCE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681--170083658",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "cadde1d8-1a5e-466a-aebd-f81b2f12a707",
+        "description": "LOAN DRAWDOWN CONTRA ACCOUNT-124550******0001LOAN BOOKING-USER-35 7*******************************",
+        "amount": -74.19,
+        "currency_code": "AED",
+        "index": 20,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOAN DRAWDOWN CONTRA ACCOUNT BOOKING USER",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--372619953",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "3f7fbd01-96c0-4ad8-ab8e-be4ab7d88440",
+        "description": "AFRICAN AND EASTERN N/E L DUBAI ARE",
+        "amount": -180.21,
+        "currency_code": "AED",
+        "index": 21,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AFRICAN AND EASTERN N E L DUBAI ARE",
+          "category": "GROCERIES",
+          "category_confidence": 0.94,
+          "type": "CARD",
+          "type_confidence": 0.95
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--2136523490",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "9d2dbcb8-1765-43d4-a7d7-bde633e474a7",
+        "description": "POS-PURCHASE CARD NO.4*********2 10316538 30-05-2020 ZUMA RESTAURANTS LLC DUBAI AE",
+        "amount": -1015.02,
+        "currency_code": "AED",
+        "index": 22,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZUMA RESTAURANTS LLC DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1868861374",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d07cb79a-85be-44da-be81-8e4ca28937cf",
+        "description": "ONLINE BANKING TRANSFER FROM - 0****** MILE CAR REPAIR REPAYMENT",
+        "amount": 1173.58,
+        "currency_code": "AED",
+        "index": 23,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: MILE CAR REPAIR REPAYMENT",
+          "category": "TRANSPORT",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681--559344006",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a722d52c-e6ad-4af5-858d-394ce6e905de",
+        "description": "OUTWARD CLEARING CLRG CHQ DEPOSIT CHQ. NO: 18***~2****",
+        "amount": 810.05,
+        "currency_code": "AED",
+        "index": 24,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "OUTWARD CLEARING CLRG CHQ DEPOSIT CHQ NO",
+          "category": "TRANSFER",
+          "category_confidence": 0.98,
+          "type": "CHEQUE",
+          "type_confidence": 0.82
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--1965396533",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d23b672b-3c10-441e-8c78-73e91936f7c1",
+        "description": "Income: Payroll deposit Lean Technologies ***23144TY** 2026-01-23",
+        "amount": 30000.0,
+        "currency_code": "AED",
+        "index": 25,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INCOME PAYROLL DEPOSIT LEAN TECHNOLOGIES",
+          "category": "SALARY_AND_REVENUE",
+          "category_confidence": 0.48,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--1651823225",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b49a4833-2606-40c1-bd7a-7576305b5342",
+        "description": "LOAN DRAWDOWN CONTRA ACCOUNT-124550******0001LOAN BOOKING-USER-35 76************************0",
+        "amount": -41.25,
+        "currency_code": "AED",
+        "index": 26,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOAN DRAWDOWN CONTRA ACCOUNT BOOKING USER",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--1972949466",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d3ca882d-1fa6-4725-9a68-8e5a3585f92f",
+        "description": "Value Added tax @ 5% for ATMWD",
+        "amount": 954.34,
+        "currency_code": "AED",
+        "index": 27,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "VALUE ADDED TAX FOR ATMWD",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681--1776072234",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "82447685-8ee2-45d9-8f65-6c73ecc5b665",
+        "description": "FEE REVERSAL LATE PAYMENT FEE",
+        "amount": 267.83,
+        "currency_code": "AED",
+        "index": 28,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "FEE REVERSAL LATE PAYMENT FEE",
+          "category": "BANK_FEES_AND_CHARGES",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1135971031",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "981c19f6-7a5e-4d42-9ed8-add0789982b3",
+        "description": "PURCHASE TRXN. PIZZA HUT ENOC SPORTS DUBAI ARE 5********8 Value Date: 14/09/2020",
+        "amount": -9.53,
+        "currency_code": "AED",
+        "index": 29,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PURCHASE TRXN PIZZA HUT ENOC SPORTS DUBAI ARE VALUE DATE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--660500796",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "75d3520f-09f9-42d7-90f2-d106cab9be3a",
+        "description": "INTEREST Interest Payment/03****** Interest run",
+        "amount": 937.97,
+        "currency_code": "AED",
+        "index": 30,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INTEREST INTEREST PAYMENT INTEREST RUN",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--805020142",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "de13d108-be6a-4cf8-bf08-7f92897f6cff",
+        "description": "GEMS WELLINGTON INTL.SCH. DUBAI ARE",
+        "amount": -72.89,
+        "currency_code": "AED",
+        "index": 31,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "GEMS WELLINGTON INTL SCH DUBAI ARE",
+          "category": "EDUCATION",
+          "category_confidence": 0.86,
+          "type": "TRANSFER",
+          "type_confidence": 0.86
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681--1620244563",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "48502221-2f40-4b75-b0eb-ae69b5136205",
+        "description": "TOP SHOP AL SHAYA CC 3895 VT****************4",
+        "amount": -241.54,
+        "currency_code": "AED",
+        "index": 32,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TOP SHOP AL SHAYA CC VT",
+          "category": "RETAIL",
+          "category_confidence": 0.94,
+          "type": "CARD",
+          "type_confidence": 0.39
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1890308220",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "87d8b19f-44a0-40a7-b1c4-c00b8a16597e",
+        "description": "ATM CASH DEPOSIT Lulu Karama Centre0466- 5*************5 06-03-2020 18:44 Value Date: 06/03/2020",
+        "amount": -133.07,
+        "currency_code": "AED",
+        "index": 33,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM CASH DEPOSIT LULU KARAMA VALUE DATE",
+          "category": "TRANSFER",
+          "category_confidence": 0.99,
+          "type": "ATM",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1978636531",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "5f6da3c2-5a2a-4fff-a94b-83467086824f",
+        "description": "AMZN MKTP US*3887I8523 AMZN.COM/BILL USA",
+        "amount": -452.31,
+        "currency_code": "AED",
+        "index": 34,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AMZN MKTP US AMZN COM BILL USA",
+          "category": "RETAIL",
+          "category_confidence": 0.9,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-2059450527",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c94a46fa-79e9-451a-884b-b7049fe9c8f7",
+        "description": "Value Added tax @ 5% for ATMWD",
+        "amount": 402.04,
+        "currency_code": "AED",
+        "index": 35,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "VALUE ADDED TAX FOR ATMWD",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-1345904406",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a14c9673-118a-405e-9fd1-56544a8d8bad",
+        "description": "YALLA GIVE- DUBAI- ARE",
+        "amount": -801.33,
+        "currency_code": "AED",
+        "index": 36,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "YALLA GIVE DUBAI ARE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.19,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1260456191",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c9184827-bea5-4aaa-bf56-df87ab9897df",
+        "description": "DR ATM TRANSACTION CARD NO.4************2 864305 04-03-2020 500000.00-IDR CANGGU TENGAH BALI BALI:ID",
+        "amount": -534.89,
+        "currency_code": "AED",
+        "index": 37,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM CANGGU TENGAH BALI BALI INDONESIA",
+          "category": "TRANSFER",
+          "category_confidence": 1,
+          "type": "ATM",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1997627414",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "ae472ca9-3d3d-4f1d-b35a-d930e68b020b",
+        "description": "KICKSTARTER: SHORTBOX: LEEDS GBR",
+        "amount": -577.98,
+        "currency_code": "AED",
+        "index": 38,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "KICKSTARTER SHORTBOX LEEDS GBR",
+          "category": "HEALTH_AND_WELLBEING",
+          "category_confidence": 0.51,
+          "type": "CARD",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1770037889",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "2a530ab4-5375-4aef-b800-83d2fb3d171d",
+        "description": "TELEGRAPHIC TRF REF NUM:O***********0 FITBAR RESTAURANT /REF/Fitbar Arsalan",
+        "amount": -124.45,
+        "currency_code": "AED",
+        "index": 39,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: O FITBAR RESTAURANT REF FITBAR ARSALAN",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.98,
+          "type": "CARD",
+          "type_confidence": 0.52
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--1602583287",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "791c9965-9a8b-448a-a112-f8b12a9c009a",
+        "description": "DVLA DRIVER ONLINE SWANSEA GBR",
+        "amount": -1038.32,
+        "currency_code": "AED",
+        "index": 40,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DVLA DRIVER ONLINE SWANSEA GBR",
+          "category": "TRANSPORT",
+          "category_confidence": 0.9,
+          "type": "TRANSFER",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-433864033",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "87a4db30-fb6f-426b-b6cc-bb9d28e15985",
+        "description": "PURCHASE TRXN. PIZZA HUT ENOC SPORTS DUBAI ARE 5********8 Value Date: 14/09/2020",
+        "amount": -346.09,
+        "currency_code": "AED",
+        "index": 41,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PURCHASE TRXN PIZZA HUT ENOC SPORTS DUBAI ARE VALUE DATE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-1551684506",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "e84dbfc8-95d5-4819-a608-0f5e86c2a547",
+        "description": "10-11 AUSTURSTRATI REYKJAVIK ISL",
+        "amount": -284.91,
+        "currency_code": "AED",
+        "index": 42,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AUSTURSTRATI REYKJAVIK ISL",
+          "category": "RETAIL",
+          "category_confidence": 0.7,
+          "type": "TRANSFER",
+          "type_confidence": 0.62
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--743283302",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f0295aa6-0d00-458b-bb02-4b346ca5fa0f",
+        "description": "CHEEKY MONKEYS P/LAND DUBAI ARE",
+        "amount": -15.93,
+        "currency_code": "AED",
+        "index": 43,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHEEKY MONKEYS P LAND DUBAI ARE",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-11113106",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "3e1d8aee-02ec-4997-bcbc-6fa4a305602d",
+        "description": "10-11 AUSTURSTRATI REYKJAVIK ISL",
+        "amount": -352.78,
+        "currency_code": "AED",
+        "index": 44,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AUSTURSTRATI REYKJAVIK ISL",
+          "category": "RETAIL",
+          "category_confidence": 0.7,
+          "type": "TRANSFER",
+          "type_confidence": 0.62
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681-266448601",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "fc659c2c-999a-4434-af2e-e9eabd0690bf",
+        "description": "PAYPAL *NINTENDO 4029357733 SGP",
+        "amount": -154.48,
+        "currency_code": "AED",
+        "index": 45,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PAYPAL NINTENDO SGP",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.47,
+          "type": "PAYPAL",
+          "type_confidence": 0.85
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825681--1259838250",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c73b577f-1e1b-45dd-b3ca-7b47928d8842",
+        "description": "POS-PURCHASE CARD NO.443913**********17 6*****0 14-07-2020 40.99-AED ZOMATO MEDIA PRIVATE LIMI DUBAI:AE",
+        "amount": -2.78,
+        "currency_code": "AED",
+        "index": 46,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZOMATO MEDIA PRIVATE LIMI DUBAI UNITED ARAB EMIRATES",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.85,
+          "type": "CARD",
+          "type_confidence": 0.94
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680--384822417",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d4aedbe3-482f-4ad0-8447-95d35445d472",
+        "description": "EL ASHRAFIA INVESTMENT LL DUBAI ARE",
+        "amount": -14.87,
+        "currency_code": "AED",
+        "index": 47,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "EL ASHRAFIA INVESTMENT LL DUBAI ARE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.86,
+          "type": "TRANSFER",
+          "type_confidence": 0.93
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-839546352",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "cda47c78-b216-4551-b555-dc6e397cf519",
+        "description": "IT0**************1 SCBLUS33XXX QUANTUM TITAN GLOBAL TRADING LTD PLOT FUNDS TRANSFER QUANTUM TITAN GLOBALTRADING LTD /RF",
+        "amount": -267.93,
+        "currency_code": "AED",
+        "index": 48,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "QUANTUM TITAN GLOBAL TRADING LTD PLOT FUNDS TRANSFER QUANTUM TITAN GLOBALTRADING LTD RF",
+          "category": "TRANSFER",
+          "category_confidence": 0.37,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1094864829",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c8f2da9e-7db0-4fc0-813c-e98bde82b2f8",
+        "description": "STARBUCKS-D582 AL SHAY DUBAI ARE",
+        "amount": -474.08,
+        "currency_code": "AED",
+        "index": 49,
+        "pending": false,
+        "timestamp": "2026-01-23T00:00:00Z",
+        "insights": {
+          "description_cleansed": "STARBUCKS AL SHAY DUBAI ARE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1769127825680-1872999688",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "dd9c8aca-20a1-47ca-9d93-135558857f9d",
+        "description": "THE BODY SHOP-AL MARYA ABU DHABI ARE",
+        "amount": -286.82,
+        "currency_code": "AED",
+        "index": 0,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "THE BODY SHOP AL MARYA ABU DHABI ARE",
+          "category": "RETAIL",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-1702570411",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "eaf14e4d-925d-4857-82d1-5bb3e9b02c87",
+        "description": "NS: Unemployment Benefit From Hafiz, SAR 10 2000 2026-02-12",
+        "amount": 20000.0,
+        "currency_code": "AED",
+        "index": 1,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "NS UNEMPLOYMENT BENEFIT FROM HAFIZ",
+          "category": "TRAVEL",
+          "category_confidence": 0.32,
+          "type": "TRANSFER",
+          "type_confidence": 0.95
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-2139065598",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "db51218f-40a9-478e-8cf4-8af0bc055ee3",
+        "description": "ONLINE BANKING TRANSFER FROM - 0****** MILE CAR REPAIR REPAYMENT",
+        "amount": 573.48,
+        "currency_code": "AED",
+        "index": 2,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: MILE CAR REPAIR REPAYMENT",
+          "category": "TRANSPORT",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-1445990784",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "da55abae-59e5-442e-8183-9246c08d48f0",
+        "description": "ONLINE BANKING PYMT-TEL ETISALAT NO.-0*******5 BNK REF.-7********1 TXNID.-1**************3",
+        "amount": -400.19,
+        "currency_code": "AED",
+        "index": 3,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PYMT TEL ETISALAT NO TXNID",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 1,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-1061241309",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "6e5dd8d9-7c63-425d-95a3-4099ce720cd2",
+        "description": "ONLINE BANKING TRANSFER TO - 1XXXXXXXXX1 ZAKAT AND FITR 2020; BNK REF.- 77388927",
+        "amount": -64.08,
+        "currency_code": "AED",
+        "index": 4,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO ZAKAT AND FITR",
+          "category": "TRANSFER",
+          "category_confidence": 0.3,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-458504059",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "656a5af4-4d01-4f80-8dd3-ac158221c58c",
+        "description": "OUTWARD CLEARING CLRG CHQ DEPOSIT CHQ. NO: 18***~2****",
+        "amount": 335.47,
+        "currency_code": "AED",
+        "index": 5,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "OUTWARD CLEARING CLRG CHQ DEPOSIT CHQ NO",
+          "category": "TRANSFER",
+          "category_confidence": 0.98,
+          "type": "CHEQUE",
+          "type_confidence": 0.82
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--1205541456",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "362fc572-d81f-45ef-9c8a-0d8f50304477",
+        "description": "ONLINE BANKING TRANSFER TO 9XXXXXXXXXXX2 FOR CHARITY MEDICAL; BNK REF.-6904 9066",
+        "amount": -412.04,
+        "currency_code": "AED",
+        "index": 6,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO FOR CHARITY MEDICAL",
+          "category": "HEALTH_AND_WELLBEING",
+          "category_confidence": 0.73,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--1783387575",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d3e4ec48-bdb6-4f20-840f-7fc75df5e8ca",
+        "description": "STARBUCKS-D574 AL SHAY DUBAI ARE",
+        "amount": -52.74,
+        "currency_code": "AED",
+        "index": 7,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "STARBUCKS AL SHAY DUBAI ARE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-1156825557",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "344207f1-c762-40e0-ac4d-d97c627ebc1c",
+        "description": "ALETIHAD CREDIT BUREAU ABU DHABI AE",
+        "amount": -4.55,
+        "currency_code": "AED",
+        "index": 8,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ALETIHAD CREDIT BUREAU ABU DHABI AE",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.96,
+          "type": "TRANSFER",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-454990871",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "10e9361f-f13c-41e5-afe8-b8beaf8c830f",
+        "description": "POS-PURCHASE CARD NO.4*************6311 115772 28-11-2019 46.90-AED DELIVEROO DMCC DUBAI:AE",
+        "amount": -107.13,
+        "currency_code": "AED",
+        "index": 9,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DELIVEROO DMCC DUBAI UNITED ARAB EMIRATES",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.89
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--1032359956",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "77e83f71-26f9-461c-a3c0-84ad2b3e51ae",
+        "description": "E-WALLET PAYMENT EWALLET PAYMENT 32694097 37000806653755 WWW.DSG.GO GOV.AE; BNK REF.-32694097",
+        "amount": -62.97,
+        "currency_code": "AED",
+        "index": 10,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "E WALLET PAYMENT EWALLET PAYMENT WWW DSG GO GOV AE",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.33,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-39337046",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "3af51ce0-433f-49f4-8d75-6f91a9f41400",
+        "description": "DEBIT CARD TXN AT CONVENIENCE ARA DUBAI 74-38-2310 25730481 4**************3",
+        "amount": -146.72,
+        "currency_code": "AED",
+        "index": 11,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DEBIT CARD TXN AT CONVENIENCE ARA DUBAI",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.48,
+          "type": "TRANSFER",
+          "type_confidence": 0.49
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--1838943820",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "15b5b9ff-3b7b-4e98-ac50-2a8e8025addf",
+        "description": "Value Added tax @ 5% for ATMWD",
+        "amount": 458.07,
+        "currency_code": "AED",
+        "index": 12,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "VALUE ADDED TAX FOR ATMWD",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--90411437",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "93523444-6d0a-4146-9489-a378aa8186e1",
+        "description": "DANUBE FOODSTUFF RIYADH SAU",
+        "amount": -185.58,
+        "currency_code": "AED",
+        "index": 13,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DANUBE FOODSTUFF RIYADH SAU",
+          "category": "RETAIL",
+          "category_confidence": 0.67,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--1339070591",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "f40a58b7-bab3-45d2-94f1-1c4647a762bc",
+        "description": "LIV P2P TRANSFER SOCIAL TRANSFER; LIV REF .-TXFRS967970734;MSG-JANU ARY RENT AND SERVICES",
+        "amount": -167.86,
+        "currency_code": "AED",
+        "index": 14,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LIV TRANSFER SOCIAL TRANSFER LIV REF MSG JANU ARY RENT AND SERVICES",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.97,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-1635560550",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "8b0d0067-bee9-451f-b6a2-e9808df9946a",
+        "description": "CINEMA BOX PARK DUBAI ARE",
+        "amount": -234.28,
+        "currency_code": "AED",
+        "index": 15,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CINEMA BOX PARK DUBAI ARE",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.78
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--795290823",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b6f911d7-2a93-4f5c-9610-b8c6a172c880",
+        "description": "AE2BT20032300254 IBANKING TRF FROM 1**********1",
+        "amount": -234.48,
+        "currency_code": "AED",
+        "index": 16,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "IBANKING TRF FROM",
+          "category": "TRANSFER",
+          "category_confidence": 0.56,
+          "type": "TRANSFER",
+          "type_confidence": 0.93
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-2130464991",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "96e84c8c-3f9e-4e7f-bcb4-2ccfa29809bb",
+        "description": "POS-PURCHASE CARD NO.4***********7 619180 01-02-2020 100.00-AED SMART DUBAI GOVERNMENT DUBAI:AE",
+        "amount": -281.25,
+        "currency_code": "AED",
+        "index": 17,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SMART DUBAI GOVERNMENT DUBAI UNITED ARAB EMIRATES",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.97,
+          "type": "TRANSFER",
+          "type_confidence": 0.9
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--1773333954",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "cdaaf1a8-45f3-4231-a078-49c02a122ef4",
+        "description": "Value Added tax @ 5% for ATMWD",
+        "amount": 853.73,
+        "currency_code": "AED",
+        "index": 18,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "VALUE ADDED TAX FOR ATMWD",
+          "category": "GOVERNMENT",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--2076697294",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a7030a11-0c82-498b-a46c-0d854a2cbe06",
+        "description": "ETISLALT GROUP-BARSHA DUBAI ARE",
+        "amount": -106.62,
+        "currency_code": "AED",
+        "index": 19,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ETISLALT GROUP BARSHA DUBAI ARE",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.62,
+          "type": "TRANSFER",
+          "type_confidence": 0.94
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--1067335397",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "2e28eace-de85-4f14-b95e-df8ac0dc6ac7",
+        "description": "KICKSTARTER: SHORTBOX: LEEDS GBR",
+        "amount": -24.7,
+        "currency_code": "AED",
+        "index": 20,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "KICKSTARTER SHORTBOX LEEDS GBR",
+          "category": "HEALTH_AND_WELLBEING",
+          "category_confidence": 0.51,
+          "type": "CARD",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-83201134",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c3a87d8b-d8fb-444a-ad32-4ef5329ee592",
+        "description": "Local ATM Fees UAE SWITCH 00008161",
+        "amount": -758.35,
+        "currency_code": "AED",
+        "index": 21,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOCAL ATM FEES UAE SWITCH",
+          "category": "TRANSFER",
+          "category_confidence": 0.79,
+          "type": "TRANSFER",
+          "type_confidence": 0.64
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-75640314",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "63205662-339f-44e5-b2af-175c455966bc",
+        "description": "AFRICAN AND EASTERN- DUBA",
+        "amount": -471.15,
+        "currency_code": "AED",
+        "index": 22,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AFRICAN AND EASTERN DUBA",
+          "category": "GROCERIES",
+          "category_confidence": 0.91,
+          "type": "CARD",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--887424171",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "37fb11f4-772f-4e6c-b7b8-7a40c75b7e37",
+        "description": "UNIQLO (EUROPE) LTD OXFORD ST FLA GBR",
+        "amount": -54.6,
+        "currency_code": "AED",
+        "index": 23,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNIQLO EUROPE LTD OXFORD ST FLA GBR",
+          "category": "RETAIL",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 0.89
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-1414561712",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "93af18b0-b1ab-4a36-ae20-e3980628d6c9",
+        "description": "Fee Debit- International Card Delivery",
+        "amount": -53.75,
+        "currency_code": "AED",
+        "index": 24,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "FEE DEBIT INTERNATIONAL CARD DELIVERY",
+          "category": "BANK_FEES_AND_CHARGES",
+          "category_confidence": 0.3,
+          "type": "TRANSFER",
+          "type_confidence": 0.81
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--2115560284",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b8c6917a-294a-4d63-9c97-155d1bf9e312",
+        "description": "DEBIT CARD TXN AT CONVENIENCE ARA DUBAI 74-38-2310 25730481 4**************3",
+        "amount": -112.32,
+        "currency_code": "AED",
+        "index": 25,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "DEBIT CARD TXN AT CONVENIENCE ARA DUBAI",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.48,
+          "type": "TRANSFER",
+          "type_confidence": 0.49
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-1866093596",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a52b2311-8ad7-49f0-bdf0-082ad60a802c",
+        "description": "INSTALLMENT PLAN EMI (3/6) GEMS WORLD ACADEMY (21461.50)",
+        "amount": -100.3,
+        "currency_code": "AED",
+        "index": 26,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INSTALLMENT PLAN EMI GEMS WORLD ACADEMY",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.9,
+          "type": "TRANSFER",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--2136479585",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "fb5c2199-1aa6-4ada-acdc-dff46d47791e",
+        "description": "UNDER ARMOUR DUBAI ARE",
+        "amount": -775.17,
+        "currency_code": "AED",
+        "index": 27,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNDER ARMOUR DUBAI ARE",
+          "category": "RETAIL",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-1120019627",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "b17d64cb-5858-4bf0-a361-bcc2d6db9eeb",
+        "description": "Local ATM Fees UAE SWITCH 00008161",
+        "amount": -550.75,
+        "currency_code": "AED",
+        "index": 28,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOCAL ATM FEES UAE SWITCH",
+          "category": "TRANSFER",
+          "category_confidence": 0.79,
+          "type": "TRANSFER",
+          "type_confidence": 0.64
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--1414056141",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d6ad6994-3a3e-4912-98d2-a1c31f85d542",
+        "description": "REVERSAL OF LATE PAYMENT FEE CREDIT ADJUSTMENT",
+        "amount": 737.28,
+        "currency_code": "AED",
+        "index": 29,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "REVERSAL OF LATE PAYMENT FEE CREDIT ADJUSTMENT",
+          "category": "BANK_FEES_AND_CHARGES",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-1178719234",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "114e7d63-9725-42c5-96ec-e6d508bdb9b7",
+        "description": "POS-PURCHASE CARD NO.4******7 690415 10-07-2020 106.00-AED ZOMATO MEDIA PRIVATE LIMI DUBAI:AE",
+        "amount": -145.14,
+        "currency_code": "AED",
+        "index": 30,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ZOMATO MEDIA PRIVATE LIMI DUBAI UNITED ARAB EMIRATES",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 0.85,
+          "type": "CARD",
+          "type_confidence": 0.94
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--400312223",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "c4cb0b06-bff9-4b1e-85eb-b626aa3fbe82",
+        "description": "PAYPAL *NINTENDO 4029357733 SGP",
+        "amount": -925.18,
+        "currency_code": "AED",
+        "index": 31,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "PAYPAL NINTENDO SGP",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.47,
+          "type": "PAYPAL",
+          "type_confidence": 0.85
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-1911170905",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a1e2444f-88ac-4630-93b4-b9db3dfed4f8",
+        "description": "CHILDREN CITY DUBAI ARE",
+        "amount": -412.56,
+        "currency_code": "AED",
+        "index": 32,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHILDREN CITY DUBAI ARE",
+          "category": "RETAIL",
+          "category_confidence": 0.5,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-815308495",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "eea0634d-7083-4214-9f13-9e23efc7bb98",
+        "description": "FACEBK *ROMANIANUNITED DONATE.FB.COM IRL",
+        "amount": -435.01,
+        "currency_code": "AED",
+        "index": 33,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "FACEBK ROMANIANUNITED DONATE FB COM IRL",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.78,
+          "type": "TRANSFER",
+          "type_confidence": 0.69
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--1812237147",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "4be21af7-5cf4-4028-815a-2bc3cda92032",
+        "description": "ONLINE BANKING TRANSFER FROM - 0****** MILE CAR REPAIR REPAYMENT",
+        "amount": 311.96,
+        "currency_code": "AED",
+        "index": 34,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: MILE CAR REPAIR REPAYMENT",
+          "category": "TRANSPORT",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--856566747",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "a376b1a3-9ffd-4e7a-8f67-d6021f6b5d8e",
+        "description": "ONLINE BANKING TRANSFER TO - 3XXXXXXXXXXX1 ZAKAT BNK REF NO - BK48522948",
+        "amount": -495.99,
+        "currency_code": "AED",
+        "index": 35,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO ZAKAT NO",
+          "category": "TRANSFER",
+          "category_confidence": 0.81,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-1163475107",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "8a4215c4-fb27-485e-a780-46e264e897b1",
+        "description": "INSTALLMENT PLAN EMI (05/12) VIRGIN MOBILE UAE(EITC (1524.60)",
+        "amount": -127.7,
+        "currency_code": "AED",
+        "index": 36,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INSTALLMENT PLAN EMI VIRGIN MOBILE UAE EITC",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.8,
+          "type": "TRANSFER",
+          "type_confidence": 0.94
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-179536944",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "776a90d9-a3bb-4207-9471-28c0c1698dbc",
+        "description": "CHEEKY MONKEYS P/LAND DUBAI ARE",
+        "amount": -707.79,
+        "currency_code": "AED",
+        "index": 37,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CHEEKY MONKEYS P LAND DUBAI ARE",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.97,
+          "type": "CARD",
+          "type_confidence": 0.97
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--723557073",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "56122284-7ea6-444c-abe8-9f43921a482c",
+        "description": "POS-PURCHASE CARD NO.4******6 10054652 25-03-2020 SUMO SUSHI & BENTO DUBAI AE",
+        "amount": -164.2,
+        "currency_code": "AED",
+        "index": 38,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "SUMO SUSHI BENTO DUBAI AE",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-728281694",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "9f41d79d-9da7-42c3-8084-0c0bf73f4600",
+        "description": "NETFLIX.COM AMSTERDAM NLD",
+        "amount": -294.51,
+        "currency_code": "AED",
+        "index": 39,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "NETFLIX COM AMSTERDAM NLD",
+          "category": "ENTERTAINMENT",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 0.96
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-1639351361",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "e7c0d3ac-7ecd-43bc-b210-3723eab9aef6",
+        "description": "AFRICAN & EASTERN(NE) DUBAI ARE",
+        "amount": -498,
+        "currency_code": "AED",
+        "index": 40,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "AFRICAN EASTERN NE DUBAI ARE",
+          "category": "GROCERIES",
+          "category_confidence": 0.95,
+          "type": "CARD",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-2128105452",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "9406f565-7e11-48f2-933e-b80a8e416c10",
+        "description": "LIV P2P TRANSFER SOCIAL TRANSFER; LIV REF .-TXFRS708401154;MSG-SEPT . RENT AND SERVICES",
+        "amount": -272.69,
+        "currency_code": "AED",
+        "index": 41,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LIV TRANSFER SOCIAL TRANSFER LIV REF MSG SEPT RENT AND SERVICES",
+          "category": "RENT_AND_SERVICES",
+          "category_confidence": 0.97,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-1646525749",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "215ac719-f8a4-4a2b-bba6-3b90a4aa1bc6",
+        "description": "ESSO CONVENIENCE 37897 WEST VANCOUVE CAN",
+        "amount": -301.82,
+        "currency_code": "AED",
+        "index": 42,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ESSO CONVENIENCE WEST VANCOUVE CAN",
+          "category": "EDUCATION",
+          "category_confidence": 0.25,
+          "type": "TRANSFER",
+          "type_confidence": 0.96
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--771625849",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "6cecae64-f801-4183-b892-ce27352258e2",
+        "description": "Visa Purchase 2**************74 CARIBOU COFFEE AED DUBAI AED 21 0504",
+        "amount": -126.87,
+        "currency_code": "AED",
+        "index": 43,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "CARIBOU COFFEE DUBAI",
+          "category": "RESTAURANTS_DINING",
+          "category_confidence": 1,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--851465636",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "55a37ce0-87ef-4333-baab-0b5ec40fb8a0",
+        "description": "LOAN DRAWDOWN CONTRA ACCOUNT-124550******0001LOAN BOOKING-USER-35 7************************-N/A",
+        "amount": -655.31,
+        "currency_code": "AED",
+        "index": 44,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "LOAN DRAWDOWN CONTRA ACCOUNT BOOKING USER N A",
+          "category": "LOANS_AND_INVESTMENTS",
+          "category_confidence": 0.98,
+          "type": "TRANSFER",
+          "type_confidence": 0.99
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-775169690",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "94b0dc0e-630a-4bff-8dfd-ccbd4500e1ec",
+        "description": "POS-PURCHASE CARD NO.4***********3 85100062 25-09-2019 UNDER ARMOUR DUBAI AE",
+        "amount": -161.4,
+        "currency_code": "AED",
+        "index": 45,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNDER ARMOUR DUBAI AE",
+          "category": "RETAIL",
+          "category_confidence": 0.99,
+          "type": "CARD",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593--38295225",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "61d74981-24b0-4902-8fd5-38cdf56081e1",
+        "description": "Income: Salary credit - Lean Technologies 23345** 2026-02-12",
+        "amount": 30000.0,
+        "currency_code": "AED",
+        "index": 46,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "INCOME SALARY CREDIT LEAN TECHNOLOGIES",
+          "category": "SALARY_AND_REVENUE",
+          "category_confidence": 0.99,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592--2025509224",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "d00f8d5a-e502-4437-ad18-9cbeae0e51ab",
+        "description": "UNIQLO NY 5TH AVE #31 NEW YORK USA",
+        "amount": -310.7,
+        "currency_code": "AED",
+        "index": 47,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "UNIQLO NY AVE NEW YORK USA",
+          "category": "RETAIL",
+          "category_confidence": 0.93,
+          "type": "CARD",
+          "type_confidence": 0.96
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-1284412841",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "30a16328-492d-47ee-af1f-cd3da590243d",
+        "description": "ONLINE BANKING TRANSFER TO - 3XXXXXXXXXXX1 ZAKAT MONEY BNK REF NO - BK45241505",
+        "amount": -161.19,
+        "currency_code": "AED",
+        "index": 48,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "TRANSFER: TO ZAKAT MONEY NO",
+          "category": "TRANSFER",
+          "category_confidence": 0.96,
+          "type": "TRANSFER",
+          "type_confidence": 1
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394593-408995934",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      },
+      {
+        "id": "4d8bdd1a-5083-4602-a46e-ac1d77b605a4",
+        "description": "DR ATM TRANSACTION CARD NO.4**********9 110810 25-12-2019 2000.00-EGP BM EGYPTIAN MUSUEM 1 CAIRO:EG",
+        "amount": -123.62,
+        "currency_code": "AED",
+        "index": 49,
+        "pending": false,
+        "timestamp": "2026-02-12T00:00:00Z",
+        "insights": {
+          "description_cleansed": "ATM BM EGYPTIAN MUSUEM CAIRO EGYPT",
+          "category": "TRANSFER",
+          "category_confidence": 0.99,
+          "type": "ATM",
+          "type_confidence": 0.98
+        },
+        "running_balance": null,
+        "transaction_reference": "MB-1770858394592-1992153360",
+        "value_timestamp": null,
+        "transaction_timestamp": null
+      }
+    ]
+  }
+}

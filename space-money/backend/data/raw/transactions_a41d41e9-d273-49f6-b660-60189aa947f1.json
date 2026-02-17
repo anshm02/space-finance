@@ -1,0 +1,17 @@
+{
+  "payload": {
+    "transactions": [
+      {
+        "id": "8788a9df-db8b-479f-9258-2747a63db48e",
+        "amount": -500.0,
+        "date": "2026-02-10T18:23:54.317287",
+        "timestamp": "2026-02-10T18:23:54.317289",
+        "description": "Integration Test Expense",
+        "currency_code": "AED",
+        "insights": {
+          "category": "RESTAURANTS_DINING"
+        }
+      }
+    ]
+  }
+}

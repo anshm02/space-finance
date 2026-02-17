@@ -1,0 +1,18 @@
+{
+  "status": "OK",
+  "results_id": "4a352602-5f30-4cc8-a7e4-e9afa1797edd",
+  "message": "Data successfully retrieved",
+  "meta": null,
+  "timestamp": "2026-02-12T23:30:07.625856808Z",
+  "status_detail": null,
+  "refreshed_at": "2026-02-12T23:29:33.641Z",
+  "type": "balances",
+  "payload": {
+    "type": "balance",
+    "balance": 11288.96,
+    "currency_code": "AED",
+    "account_id": "2b24bb2c-803b-4efc-bb73-f9acfa9977b4",
+    "account_name": "Credit Account",
+    "account_type": "CREDIT"
+  }
+}

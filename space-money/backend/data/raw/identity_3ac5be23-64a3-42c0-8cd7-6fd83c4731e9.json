@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "results_id": "a547b2a1-cb18-4c03-8f84-cb09946528eb",
+  "message": "Data successfully retrieved",
+  "meta": null,
+  "timestamp": "2026-02-12T01:08:08.827679277Z",
+  "status_detail": null,
+  "refreshed_at": "2026-02-12T01:07:45.538Z",
+  "type": "identities",
+  "payload": {
+    "type": "identity",
+    "address": "11, Candie, Candie, 66666, 55555, Locks, UAE",
+    "birth_date": "2014-02-23",
+    "email_address": "cedrick.bartell@yahoo.com",
+    "full_name": "Georgetta Bonita Lowe",
+    "gender": "NOT_SPECIFIED",
+    "mobile_number": "+9719) 9858376 x0671",
+    "national_identity_number": "950307890964"
+  }
+}

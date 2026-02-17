@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "results_id": "1df5eb36-c2d3-43a5-adf0-23dd8e3f098d",
+  "message": "Data successfully retrieved",
+  "meta": null,
+  "timestamp": "2026-02-04T05:20:46.841011169Z",
+  "status_detail": null,
+  "refreshed_at": "2026-02-04T05:20:28.536Z",
+  "type": "identities",
+  "payload": {
+    "type": "identity",
+    "address": "11, Beahan, Beahan, 66666, 55555, Brook, UAE",
+    "birth_date": "2025-02-26",
+    "email_address": "freeda.towne@gmail.com",
+    "full_name": "Jessi Tyree Huel",
+    "gender": "MALE",
+    "mobile_number": "+971.515.6878 x90820",
+    "national_identity_number": "583369487400"
+  }
+}

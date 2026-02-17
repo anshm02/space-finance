@@ -1,0 +1,51 @@
+{
+  "entity_id": "dummy_entity",
+  "sync_timestamp": "2026-02-11T02:23:54.311335",
+  "results": {
+    "identity": {
+      "status": "success",
+      "sync_type": "identity",
+      "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/identity_dummy_entity.json",
+      "timestamp": "2026-02-11T02:23:54.312202"
+    },
+    "accounts": {
+      "status": "success",
+      "file_path": "dummy",
+      "account_ids": [
+        "a41d41e9-d273-49f6-b660-60189aa947f1"
+      ],
+      "db_account_ids": [
+        "dcc73c84-f3e8-4977-8779-5400783bbf71"
+      ],
+      "count": 1
+    },
+    "balances": [
+      {
+        "status": "success",
+        "sync_type": "balance",
+        "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/balance_a41d41e9-d273-49f6-b660-60189aa947f1.json",
+        "balance_info": {
+          "balance": 1000.0,
+          "currency_code": "AED",
+          "account_type": null
+        },
+        "timestamp": "2026-02-11T02:23:54.317262"
+      }
+    ],
+    "transactions": [
+      {
+        "status": "success",
+        "sync_type": "transactions",
+        "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/transactions_a41d41e9-d273-49f6-b660-60189aa947f1.json",
+        "count": 1,
+        "timestamp": "2026-02-11T02:23:54.334526"
+      }
+    ]
+  },
+  "files_created": [
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/identity_dummy_entity.json",
+    "dummy",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/balance_a41d41e9-d273-49f6-b660-60189aa947f1.json",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/transactions_a41d41e9-d273-49f6-b660-60189aa947f1.json"
+  ]
+}

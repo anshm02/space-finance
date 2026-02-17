@@ -1,0 +1,439 @@
+================================================================================
+SPACE MONEY - AWS RDS DATABASE SCHEMA DOCUMENTATION
+================================================================================
+Database: PostgreSQL 17 on AWS RDS
+Encryption: AWS RDS encryption at rest + Field-level AES-256 encryption for PII
+Compliance: DIFC (Dubai International Financial Centre) compliant
+Last Updated: 2026-02-08
+
+================================================================================
+SCHEMA ORGANIZATION
+================================================================================
+The database is organized into 4 PostgreSQL schemas:
+  1. user       - User profiles, demographics, consent, data ingestion config
+  2. accounts   - Bank accounts, balances, credit card details
+  3. transactions - Raw transaction data with Lean Insights enrichment
+  4. system     - Audit logs for compliance
+
+================================================================================
+SCHEMA: user
+================================================================================
+
+TABLE: user.user_profiles
+--------------------------------------------------------------------------------
+Purpose: Core user account information
+Encryption: email (AES-256)
+
+Columns:
+  user_id              UUID          PRIMARY KEY, default: uuid_generate_v4()
+  username             VARCHAR(100)  UNIQUE, NOT NULL, indexed
+  email                TEXT          ENCRYPTED (AES-256), UNIQUE, NOT NULL, indexed
+  password_hash        VARCHAR(255)  NOT NULL
+  created_at           TIMESTAMPTZ   NOT NULL, default: now()
+  last_login           TIMESTAMPTZ   
+  account_status       ENUM          NOT NULL, default: 'active'
+                                     Values: active, suspended, deleted
+  country_code         VARCHAR(2)    NOT NULL
+
+Indexes:
+  - PRIMARY KEY on user_id
+  - UNIQUE INDEX on username
+  - UNIQUE INDEX on email (encrypted)
+
+
+TABLE: user.user_demographics
+--------------------------------------------------------------------------------
+Purpose: User demographic information (1:1 with user_profiles)
+Encryption: None
+
+Columns:
+  user_id              UUID          PRIMARY KEY, FOREIGN KEY -> user.user_profiles.user_id
+                                     ON DELETE CASCADE
+  age                  INTEGER       NOT NULL, CHECK: age >= 18 AND age <= 100
+  sex                  ENUM          Values: male, female, other, prefer_not_to_say
+  income_estimate      DECIMAL(10,2) CHECK: income_estimate >= 0
+  income_source        ENUM          Values: user_provided, auto_detected
+  updated_at           TIMESTAMPTZ   default: now(), updates on modification
+
+Constraints:
+  - age_check: age >= 18 AND age <= 100
+  - income_estimate_check: income_estimate >= 0
+
+
+TABLE: user.consent_records
+--------------------------------------------------------------------------------
+Purpose: DIFC-compliant consent tracking
+Encryption: None
+Hashing: ip_address (SHA-256)
+
+Columns:
+  consent_id           UUID          PRIMARY KEY, default: uuid_generate_v4()
+  user_id              UUID          NOT NULL, FOREIGN KEY -> user.user_profiles.user_id
+                                     ON DELETE CASCADE
+  consent_type         ENUM          NOT NULL
+                                     Values: data_processing, open_finance_access, 
+                                             marketing, analytics
+  consent_text_version VARCHAR(50)   NOT NULL
+  granted_at           TIMESTAMPTZ   NOT NULL, default: now()
+  revoked_at           TIMESTAMPTZ   
+  ip_address           VARCHAR(64)   NOT NULL, HASHED (SHA-256)
+
+Indexes:
+  - PRIMARY KEY on consent_id
+  - INDEX on (user_id, consent_type, revoked_at)
+
+
+TABLE: user.data_ingestion_config
+--------------------------------------------------------------------------------
+Purpose: User data ingestion settings (Open Finance or Manual)
+Encryption: lean_access_token (AES-256)
+
+Columns:
+  user_id              UUID          PRIMARY KEY, FOREIGN KEY -> user.user_profiles.user_id
+                                     ON DELETE CASCADE
+  ingestion_method     ENUM          NOT NULL
+                                     Values: real_time, manual
+  open_finance_provider VARCHAR(50)  
+  entity_id            UUID          Lean Technologies entity ID
+  lean_access_token    TEXT          ENCRYPTED (AES-256)
+  token_expires_at     TIMESTAMPTZ   
+  last_sync_timestamp  TIMESTAMPTZ   
+  sync_status          ENUM          default: 'active'
+                                     Values: active, paused, failed, expired
+
+
+================================================================================
+SCHEMA: accounts
+================================================================================
+
+TABLE: accounts.user_accounts
+--------------------------------------------------------------------------------
+Purpose: User bank accounts from Lean Technologies
+Encryption: account_number, iban (AES-256)
+Status: ✅ ACTIVELY POPULATED
+
+Columns:
+  account_id           UUID          PRIMARY KEY, default: uuid_generate_v4()
+  user_id              UUID          NOT NULL, FOREIGN KEY -> user.user_profiles.user_id
+                                     ON DELETE CASCADE
+  lean_account_id      UUID          Lean Technologies account identifier
+  institution_name     VARCHAR(100)  NOT NULL (currently hardcoded to "Lean Bank")
+  account_name         VARCHAR(100)  NOT NULL (e.g., "Current Account")
+  account_number       TEXT          ENCRYPTED (AES-256)
+  iban                 TEXT          ENCRYPTED (AES-256)
+  account_type         ENUM          NOT NULL
+                                     Values: CURRENT, SAVINGS, CREDIT
+  currency_code        VARCHAR(3)    NOT NULL, default: 'AED'
+  account_status       ENUM          default: 'active'
+                                     Values: active, inactive, closed
+  linked_at            TIMESTAMPTZ   default: now()
+  last_synced_at       TIMESTAMPTZ   
+
+Indexes:
+  - PRIMARY KEY on account_id
+  - INDEX on user_id
+  - INDEX on lean_account_id
+
+Current Data: 3 accounts (1 CURRENT, 1 SAVINGS, 1 CREDIT)
+
+
+TABLE: accounts.account_balances
+--------------------------------------------------------------------------------
+Purpose: Historical balance snapshots for trend analysis
+Encryption: None
+Status: ✅ ACTIVELY POPULATED
+
+Columns:
+  balance_id           UUID          PRIMARY KEY, default: uuid_generate_v4()
+  account_id           UUID          NOT NULL, FOREIGN KEY -> accounts.user_accounts.account_id
+                                     ON DELETE CASCADE
+  snapshot_timestamp   TIMESTAMPTZ   NOT NULL, default: now()
+  balance              DECIMAL(12,2) NOT NULL
+  currency_code        VARCHAR(3)    NOT NULL
+
+Indexes:
+  - PRIMARY KEY on balance_id
+  - INDEX on (account_id, snapshot_timestamp DESC)
+
+Current Data: 3 balance snapshots
+
+
+TABLE: accounts.credit_card_details
+--------------------------------------------------------------------------------
+Purpose: Credit card specific details for CREDIT type accounts
+Encryption: card_last_four (AES-256)
+Status: ⚠️ NOT CURRENTLY POPULATED (Schema exists, mapping logic missing)
+
+Columns:
+  account_id           UUID          PRIMARY KEY, FOREIGN KEY -> accounts.user_accounts.account_id
+                                     ON DELETE CASCADE
+  card_last_four       TEXT          ENCRYPTED (AES-256)
+  credit_limit         DECIMAL(10,2) NOT NULL, CHECK: credit_limit > 0
+  next_payment_due_date DATE         
+  next_payment_due_amount DECIMAL(10,2) CHECK: next_payment_due_amount >= 0
+
+Constraints:
+  - credit_limit_check: credit_limit > 0
+  - payment_due_amount_check: next_payment_due_amount >= 0
+
+Data Source (Available but not mapped):
+  From Lean API accounts response, nested in "credit" object:
+    - card_number_last_four
+    - limit
+    - next_payment_due_date
+    - next_payment_due_amount
+
+Current Data: 0 records (mapping not implemented in data_service.py)
+
+
+================================================================================
+SCHEMA: transactions
+================================================================================
+
+TABLE: transactions.raw_transactions
+--------------------------------------------------------------------------------
+Purpose: Raw transaction data from Lean Technologies with Lean Insights enrichment
+Encryption: description (AES-256)
+Status: ✅ ACTIVELY POPULATED
+
+Columns:
+  transaction_id       UUID          PRIMARY KEY, default: uuid_generate_v4()
+  user_id              UUID          NOT NULL, FOREIGN KEY -> user.user_profiles.user_id
+                                     ON DELETE CASCADE
+  account_id           UUID          NOT NULL, FOREIGN KEY -> accounts.user_accounts.account_id
+                                     ON DELETE CASCADE
+  lean_transaction_id  UUID          UNIQUE, Lean Technologies transaction identifier
+  transaction_date     DATE          NOT NULL
+  amount               DECIMAL(10,2) NOT NULL (stored as absolute value)
+  currency_code        VARCHAR(3)    NOT NULL
+  description          TEXT          ENCRYPTED (AES-256), raw transaction description
+  description_cleansed VARCHAR(255)  Cleansed description from Lean Insights (not encrypted)
+  transaction_type     ENUM          NOT NULL
+                                     Values: debit, credit
+                                     Logic: negative amount = DEBIT, positive = CREDIT
+  is_pending           BOOLEAN       default: false
+  transaction_reference VARCHAR(100) 
+  
+  -- Lean Insights Enrichment Fields
+  lean_insights_category VARCHAR(50) Categories: GROCERIES, RESTAURANTS_DINING, 
+                                     ENTERTAINMENT, RETAIL, GOVERNMENT, 
+                                     LOANS_AND_INVESTMENTS, TRANSFER, 
+                                     RENT_AND_SERVICES, HEALTH_AND_WELLBEING,
+                                     SALARY_AND_REVENUE
+  lean_insights_type   VARCHAR(50)   Types: CARD, TRANSFER, OTHER
+  lean_category_confidence DECIMAL(3,2) Range: 0.00 to 1.00
+                                     CHECK: lean_category_confidence >= 0 AND <= 1
+  
+  created_at           TIMESTAMPTZ   default: now()
+
+Indexes:
+  - PRIMARY KEY on transaction_id
+  - UNIQUE INDEX on lean_transaction_id
+  - INDEX on (user_id, transaction_date DESC)
+  - INDEX on (account_id, transaction_date DESC)
+
+Constraints:
+  - category_confidence_check: lean_category_confidence >= 0 AND <= 1
+
+Current Data: 1,043 transactions with full Lean Insights enrichment
+
+
+================================================================================
+SCHEMA: system
+================================================================================
+
+TABLE: system.audit_log
+--------------------------------------------------------------------------------
+Purpose: DIFC-compliant audit trail for all significant system events
+Encryption: None
+Hashing: ip_address (SHA-256)
+Status: ✅ ACTIVELY POPULATED
+
+Columns:
+  log_id               UUID          PRIMARY KEY, default: uuid_generate_v4()
+  user_id              UUID          FOREIGN KEY -> user.user_profiles.user_id
+                                     ON DELETE SET NULL (nullable)
+  event_type           ENUM          NOT NULL
+                                     Values: user_login, data_export, consent_granted,
+                                             consent_revoked, account_deleted, 
+                                             admin_access, lean_sync
+  entity_type          ENUM          Values: transaction, account, user_profile, 
+                                             consent_record
+  entity_id            UUID          
+  ip_address           VARCHAR(64)   NOT NULL, HASHED (SHA-256)
+  timestamp            TIMESTAMPTZ   NOT NULL, default: now()
+
+Indexes:
+  - PRIMARY KEY on log_id
+  - INDEX on (user_id, timestamp DESC)
+  - INDEX on (event_type, timestamp DESC)
+
+Current Data: 4 audit log entries
+
+
+================================================================================
+DATA FLOW & MAPPING LOGIC
+================================================================================
+
+Source: Lean Technologies API (https://sandbox.leantech.me)
+Trigger: Mobile app "Connect Bank" flow -> Backend /api/v1/lean/sync endpoint
+Method: Dual persistence (Local JSON files + AWS RDS Database)
+
+ACCOUNTS MAPPING (data_service.py::_upsert_accounts)
+--------------------------------------------------------------------------------
+Lean API Response -> Database Columns:
+  payload.accounts[].account_id     -> lean_account_id (UUID)
+  payload.accounts[].name           -> account_name (String)
+  payload.accounts[].type           -> account_type (Enum: CURRENT/SAVINGS/CREDIT)
+  payload.accounts[].currency_code  -> currency_code (String, default: AED)
+  payload.accounts[].account_number -> account_number (ENCRYPTED)
+  payload.accounts[].iban           -> iban (ENCRYPTED)
+  
+  Hardcoded:
+    institution_name = "Lean Bank"
+    account_status = ACTIVE
+    linked_at = now()
+    last_synced_at = now()
+
+  ⚠️ NOT MAPPED (Credit Card Details):
+    payload.accounts[].credit.card_number_last_four -> (missing)
+    payload.accounts[].credit.limit                 -> (missing)
+    payload.accounts[].credit.next_payment_due_date -> (missing)
+    payload.accounts[].credit.next_payment_due_amount -> (missing)
+
+
+BALANCES MAPPING (data_service.py::_upsert_balance)
+--------------------------------------------------------------------------------
+Lean API Response -> Database Columns:
+  payload.balance       -> balance (Decimal)
+  payload.currency_code -> currency_code (String)
+  
+  Auto-generated:
+    snapshot_timestamp = now()
+
+
+TRANSACTIONS MAPPING (data_service.py::_upsert_transactions)
+--------------------------------------------------------------------------------
+Lean API Response -> Database Columns:
+  payload.transactions[].id          -> lean_transaction_id (UUID)
+  payload.transactions[].timestamp   -> transaction_date (Date)
+  payload.transactions[].amount      -> amount (Decimal, absolute value)
+                                        transaction_type (DEBIT if negative, CREDIT if positive)
+  payload.transactions[].currency_code -> currency_code (String)
+  payload.transactions[].description -> description (ENCRYPTED)
+  payload.transactions[].pending     -> is_pending (Boolean)
+  payload.transactions[].transaction_reference -> transaction_reference (String, max 100 chars)
+  
+  Lean Insights Enrichment:
+  payload.transactions[].insights.description_cleansed -> description_cleansed (String, max 255 chars)
+  payload.transactions[].insights.category             -> lean_insights_category (String, max 50 chars)
+  payload.transactions[].insights.type                 -> lean_insights_type (String, max 50 chars)
+  payload.transactions[].insights.category_confidence  -> lean_category_confidence (Decimal 0.00-1.00)
+  
+  Auto-generated:
+    created_at = now()
+
+De-duplication: Uses lean_transaction_id UNIQUE constraint to prevent duplicates
+
+
+================================================================================
+ENCRYPTION & SECURITY
+================================================================================
+
+Field-Level Encryption (AES-256):
+  - user.user_profiles.email
+  - user.data_ingestion_config.lean_access_token
+  - accounts.user_accounts.account_number
+  - accounts.user_accounts.iban
+  - accounts.credit_card_details.card_last_four
+  - transactions.raw_transactions.description
+
+Hashing (SHA-256):
+  - user.consent_records.ip_address
+  - system.audit_log.ip_address
+
+Encryption Key Management:
+  - Key stored in environment variable: ENCRYPTION_KEY
+  - Generated using: cryptography.fernet.Fernet.generate_key()
+  - Recommendation: Store in AWS Secrets Manager for production
+
+Database-Level Security:
+  - AWS RDS encryption at rest
+  - SSL/TLS required for connections
+  - PostgreSQL 17 with latest security patches
+
+
+================================================================================
+PERFORMANCE OPTIMIZATIONS
+================================================================================
+
+Bulk Operations:
+  - Transactions use bulk INSERT to minimize round trips
+  - Pre-query existing lean_transaction_ids to filter duplicates in memory
+
+Indexes:
+  - All foreign keys are indexed
+  - Composite indexes on (user_id, date) for time-series queries
+  - DESC indexes on timestamp columns for recent-first queries
+
+Connection Pooling:
+  - SQLAlchemy async engine with pool_size=5
+  - pool_pre_ping=True for connection health checks
+
+
+================================================================================
+CURRENT DATA STATISTICS (as of last sync)
+================================================================================
+
+user.user_profiles:              0 records
+user.user_demographics:          0 records
+user.consent_records:            0 records
+user.data_ingestion_config:      0 records
+
+accounts.user_accounts:          3 records (1 CURRENT, 1 SAVINGS, 1 CREDIT)
+accounts.account_balances:       3 records
+accounts.credit_card_details:    0 records ⚠️ (not implemented)
+
+transactions.raw_transactions:   1,043 records
+
+system.audit_log:                4 records
+
+
+================================================================================
+KNOWN GAPS & TODO
+================================================================================
+
+1. Credit Card Details Not Populated
+   Location: data_service.py::_upsert_accounts (line ~108-187)
+   Issue: The "credit" object from Lean API is ignored
+   Impact: Credit limits and payment due dates not stored in database
+   Fix Required: Add logic to insert into accounts.credit_card_details table
+   
+2. User Profile Integration
+   Issue: No user registration/login flow implemented yet
+   Impact: All synced data currently has NULL user_id references
+   Fix Required: Implement authentication and link Lean entities to users
+
+3. Lean Insights Type Confidence
+   Issue: insights.type_confidence from Lean API is not stored
+   Impact: Missing confidence score for transaction type classification
+   Fix Required: Add lean_type_confidence column to raw_transactions table
+
+
+================================================================================
+MIGRATION HISTORY
+================================================================================
+
+1. ef07c16c97aa - Initial schema with DIFC encryption (2026-01-XX)
+   - Created all 4 schemas (user, accounts, transactions, system)
+   - Implemented field-level encryption for PII
+   - Added audit logging infrastructure
+
+2. 91ec8f44b9c0 - Add Lean integration tables (2026-01-XX)
+   - Added legacy Lean integration tables for backward compatibility
+   - Created transactions.lean_entities, lean_customers, lean_accounts
+
+
+================================================================================
+END OF SCHEMA DOCUMENTATION
+================================================================================

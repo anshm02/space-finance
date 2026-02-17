@@ -1,0 +1,93 @@
+{
+  "entity_id": "5e425bd5-8720-41c8-844d-c16ee07757bb",
+  "sync_timestamp": "2026-02-04T05:41:58.738233",
+  "results": {
+    "identity": {
+      "status": "success",
+      "sync_type": "identity",
+      "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/identity_5e425bd5-8720-41c8-844d-c16ee07757bb.json",
+      "timestamp": "2026-02-04T05:41:59.662430"
+    },
+    "accounts": {
+      "status": "success",
+      "sync_type": "accounts",
+      "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/accounts_5e425bd5-8720-41c8-844d-c16ee07757bb.json",
+      "account_ids": [
+        "11183a9a-7c62-4fee-8ac1-158b6de8a6f5",
+        "25eb98c2-5166-4596-adaf-527cd956abb0",
+        "73f8016b-a4f7-4b80-8235-9bb9c20ce540"
+      ],
+      "db_account_ids": [],
+      "count": 3,
+      "timestamp": "2026-02-04T05:42:02.250446"
+    },
+    "balances": [
+      {
+        "status": "success",
+        "sync_type": "balance",
+        "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/balance_11183a9a-7c62-4fee-8ac1-158b6de8a6f5.json",
+        "balance_info": {
+          "balance": 181782.43,
+          "currency_code": "AED",
+          "account_type": "CURRENT"
+        },
+        "timestamp": "2026-02-04T05:42:02.659369"
+      },
+      {
+        "status": "success",
+        "sync_type": "balance",
+        "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/balance_25eb98c2-5166-4596-adaf-527cd956abb0.json",
+        "balance_info": {
+          "balance": 10000.0,
+          "currency_code": "AED",
+          "account_type": "SAVINGS"
+        },
+        "timestamp": "2026-02-04T05:42:04.093354"
+      },
+      {
+        "status": "success",
+        "sync_type": "balance",
+        "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/balance_73f8016b-a4f7-4b80-8235-9bb9c20ce540.json",
+        "balance_info": {
+          "balance": 10000.0,
+          "currency_code": "AED",
+          "account_type": "CREDIT"
+        },
+        "timestamp": "2026-02-04T05:42:05.016983"
+      }
+    ],
+    "transactions": [
+      {
+        "status": "success",
+        "sync_type": "transactions",
+        "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/transactions_11183a9a-7c62-4fee-8ac1-158b6de8a6f5.json",
+        "count": 348,
+        "timestamp": "2026-02-04T05:42:03.730439"
+      },
+      {
+        "status": "success",
+        "sync_type": "transactions",
+        "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/transactions_25eb98c2-5166-4596-adaf-527cd956abb0.json",
+        "count": 360,
+        "timestamp": "2026-02-04T05:42:04.666467"
+      },
+      {
+        "status": "success",
+        "sync_type": "transactions",
+        "file_path": "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/transactions_73f8016b-a4f7-4b80-8235-9bb9c20ce540.json",
+        "count": 335,
+        "timestamp": "2026-02-04T05:42:05.354639"
+      }
+    ]
+  },
+  "files_created": [
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/identity_5e425bd5-8720-41c8-844d-c16ee07757bb.json",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/accounts_5e425bd5-8720-41c8-844d-c16ee07757bb.json",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/balance_11183a9a-7c62-4fee-8ac1-158b6de8a6f5.json",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/transactions_11183a9a-7c62-4fee-8ac1-158b6de8a6f5.json",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/balance_25eb98c2-5166-4596-adaf-527cd956abb0.json",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/transactions_25eb98c2-5166-4596-adaf-527cd956abb0.json",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/balance_73f8016b-a4f7-4b80-8235-9bb9c20ce540.json",
+    "/Users/anshmarwa/Desktop/space-finance-coaching/space-finance/space-money/backend/data/raw/transactions_73f8016b-a4f7-4b80-8235-9bb9c20ce540.json"
+  ]
+}
