@@ -64,29 +64,12 @@ class UserAccount(Base):
     )
     linked_at = Column(DateTime(timezone=True), server_default=func.now())
     last_synced_at = Column(DateTime(timezone=True))
+    # Balance tracking (merged from account_balances table)
+    current_balance = Column(DECIMAL(12, 2))
+    balance_updated_at = Column(DateTime(timezone=True))
 
 
-class AccountBalance(Base):
-    """
-    Account balance snapshots for historical tracking.
-    
-    Stores balance at each sync point for trend analysis.
-    """
-    __tablename__ = "account_balances"
-    __table_args__ = (
-        Index("idx_account_balances_account_timestamp", "account_id", "snapshot_timestamp", postgresql_ops={"snapshot_timestamp": "DESC"}),
-        {"schema": "accounts"}
-    )
-    
-    balance_id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    account_id = Column(
-        UUID(as_uuid=True),
-        ForeignKey("accounts.user_accounts.account_id", ondelete="CASCADE"),
-        nullable=False
-    )
-    snapshot_timestamp = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
-    balance = Column(DECIMAL(12, 2), nullable=False)
-    currency_code = Column(String(3), nullable=False)
+
 
 
 class CreditCardDetails(Base):

@@ -65,7 +65,10 @@ class UserProfile(Base):
     DIFC Compliance: Email is encrypted with AES-256.
     """
     __tablename__ = "user_profiles"
-    __table_args__ = {"schema": "user"}
+    __table_args__ = (
+        CheckConstraint("age >= 18 AND age <= 100", name="age_check"),
+        {"schema": "user"}
+    )
     
     user_id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     username = Column(String(100), unique=True, nullable=False, index=True)
@@ -79,31 +82,13 @@ class UserProfile(Base):
         nullable=False
     )
     country_code = Column(String(2), nullable=False)
-
-
-class UserDemographics(Base):
-    """
-    User demographic information.
     
-    Linked 1:1 with UserProfile.
-    """
-    __tablename__ = "user_demographics"
-    __table_args__ = (
-        CheckConstraint("age >= 18 AND age <= 100", name="age_check"),
-        CheckConstraint("income_estimate >= 0", name="income_estimate_check"),
-        {"schema": "user"}
-    )
-    
-    user_id = Column(
-        UUID(as_uuid=True),
-        ForeignKey("user.user_profiles.user_id", ondelete="CASCADE"),
-        primary_key=True
-    )
-    age = Column(Integer, nullable=False)
-    sex = Column(Enum(Sex, name="sex_enum", create_type=True))
-    income_estimate = Column(DECIMAL(10, 2))
-    income_source = Column(Enum(IncomeSource, name="income_source_enum", create_type=True))
-    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+    # Demographic information (nullable until onboarding is built)
+    age = Column(Integer, nullable=True)
+    sex = Column(Enum(Sex, name="sex_enum", create_type=False), nullable=True)
+    income_estimate = Column(DECIMAL(10, 2), nullable=True)
+    income_source = Column(Enum(IncomeSource, name="income_source_enum", create_type=False), nullable=True)
+
 
 
 class ConsentRecord(Base):

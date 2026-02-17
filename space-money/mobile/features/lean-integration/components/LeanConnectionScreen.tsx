@@ -20,10 +20,12 @@ const LEAN_APP_TOKEN = '33429486-4597-4dbf-b122-2ac4920d8f1d';
 
 interface LeanConnectionScreenProps {
   userId: string;
+  onSyncComplete?: (userId: string) => void;
 }
 
 export const LeanConnectionScreen: React.FC<LeanConnectionScreenProps> = ({
   userId,
+  onSyncComplete,
 }) => {
   const {
     customer,
@@ -65,26 +67,26 @@ export const LeanConnectionScreen: React.FC<LeanConnectionScreenProps> = ({
 
   const handleLinkBank = async () => {
     Alert.alert('DEBUG', 'handleLinkBank called');
-    
+
     if (!customer) {
       Alert.alert('Error', 'Customer not initialized');
       return;
     }
-    
+
     Alert.alert('DEBUG', `Customer exists: ${customer.customer_id}`);
 
     try {
       // Get customer access token
       Alert.alert('DEBUG', 'Getting customer access token...');
       const token = await getCustomerAccessToken(customer.customer_id);
-      
+
       Alert.alert('DEBUG', `Token received: ${token ? 'YES' : 'NO'}`);
-      
+
       if (!token) {
         Alert.alert('Error', 'Failed to get customer access token');
         return;
       }
-      
+
       setCustomerToken(token);
       Alert.alert('DEBUG', 'About to open Lean Link modal');
       setShowLeanLink(true);
@@ -96,46 +98,46 @@ export const LeanConnectionScreen: React.FC<LeanConnectionScreenProps> = ({
   const handleLeanLinkSuccess = async (entityId: string) => {
     Alert.alert('DEBUG', `handleLeanLinkSuccess called - SDK didn't return entity_id, fetching from Lean...`);
     console.log('[LeanConnection] handleLeanLinkSuccess called - fetching entities from Lean');
-    
+
     if (!customer) {
       Alert.alert('DEBUG', 'No customer found, returning');
       console.log('[LeanConnection] No customer found, returning');
       return;
     }
-    
+
     try {
       Alert.alert('DEBUG', `Fetching entities from Lean for customer: ${customer.customer_id}`);
       console.log('[LeanConnection] Fetching entities from Lean API for customer:', customer.customer_id);
-      
+
       // Fetch entities from Lean API
       const { fetchEntitiesFromLean } = await import('../api/leanApi');
       const leanEntities = await fetchEntitiesFromLean(customer.customer_id);
-      
+
       Alert.alert('DEBUG', `Fetched ${leanEntities.entities?.length || 0} entities from Lean`);
       console.log('[LeanConnection] Fetched entities from Lean:', leanEntities);
-      
+
       if (!leanEntities.entities || leanEntities.entities.length === 0) {
         Alert.alert('Error', 'No entities found. The bank connection may not have completed.');
         return;
       }
-      
+
       // Get the most recent entity
       const latestEntity = leanEntities.entities[leanEntities.entities.length - 1];
       Alert.alert('DEBUG', `Using entity: ${latestEntity.id}`);
       console.log('[LeanConnection] Using latest entity:', latestEntity);
-      
+
       // Save the entity to our database
       Alert.alert('DEBUG', 'Saving entity to database...');
       await saveEntity(customer.id, latestEntity.id, latestEntity.bank_identifier);
-      
+
       Alert.alert('DEBUG', 'Entity saved successfully');
       console.log('[LeanConnection] Entity saved, fetching entities from our DB');
-      
+
       await getEntities(customer.id);
-      
+
       Alert.alert('DEBUG', 'Entities fetched from our DB');
       console.log('[LeanConnection] Success - entities fetched');
-      
+
       Alert.alert('Success', 'Bank account linked successfully!');
     } catch (err: any) {
       Alert.alert('Error', `Failed to save bank connection: ${err.message}`);
@@ -162,9 +164,15 @@ export const LeanConnectionScreen: React.FC<LeanConnectionScreenProps> = ({
           'Success',
           `Synced data! Created ${result.files_created.length} files.`
         );
-        
+
         // Load accounts for this entity
         await getAccounts(entity.entity_id);
+
+        // Navigate to dashboard if callback provided
+        if (onSyncComplete && customer) {
+          // Pass the user_id to the dashboard
+          onSyncComplete(customer.user_id || userId);
+        }
       }
     } catch (err) {
       Alert.alert('Error', 'Failed to sync data');
@@ -202,7 +210,7 @@ export const LeanConnectionScreen: React.FC<LeanConnectionScreenProps> = ({
     <ScrollView style={styles.container}>
       <View style={styles.content}>
         <Text style={styles.title}>Bank Connections</Text>
-        
+
         {customer && (
           <View style={styles.infoCard}>
             <Text style={styles.infoLabel}>Customer ID:</Text>
@@ -261,11 +269,11 @@ export const LeanConnectionScreen: React.FC<LeanConnectionScreenProps> = ({
                   <Text style={styles.statusText}>{entity.status}</Text>
                 </View>
               </View>
-              
+
               <Text style={styles.entityId}>
                 Entity ID: {entity.entity_id}
               </Text>
-              
+
               {entity.last_synced_at && (
                 <Text style={styles.syncTime}>
                   Last synced: {new Date(entity.last_synced_at).toLocaleString()}

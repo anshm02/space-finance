@@ -23,6 +23,19 @@ router = APIRouter(prefix="/api/v1/lean", tags=["lean"])
 logger = logging.getLogger(__name__)
 
 
+async def _run_pipeline_bg(user_id: str):
+    """Run analytics pipeline in background after sync."""
+    from database import AsyncSessionLocal
+    from services.analytics_service import run_health_checkup_pipeline
+    async with AsyncSessionLocal() as session:
+        try:
+            result = await run_health_checkup_pipeline(session, user_id)
+            await session.commit()
+            logger.info(f"Analytics pipeline completed for {user_id}: {result}")
+        except Exception as e:
+            logger.error(f"Analytics pipeline failed for {user_id}: {e}")
+
+
 async def get_lean_client():
     """Dependency for getting Lean client."""
     async with LeanClient() as client:
@@ -404,6 +417,11 @@ async def sync_data(
                     db.add(balance_history)
         
         await db.commit()
+        
+        # Trigger analytics pipeline in background (non-blocking)
+        import asyncio
+        if db_user_id:
+            asyncio.create_task(_run_pipeline_bg(str(db_user_id)))
         
         return DataSyncResponse(
             entity_id=request.entity_id,

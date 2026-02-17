@@ -53,6 +53,7 @@ class RawTransaction(Base):
     )
     lean_transaction_id = Column(UUID(as_uuid=True), unique=True)
     transaction_date = Column(Date, nullable=False)
+    transaction_timestamp = Column(DateTime(timezone=True))  # Full timestamp from Lean API
     amount = Column(DECIMAL(10, 2), nullable=False)
     currency_code = Column(String(3), nullable=False)
     description = Column(EncryptedType(2000))  # Encrypted raw description

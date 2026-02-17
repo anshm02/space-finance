@@ -9,6 +9,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from routers import lean
+from routers import dashboard
+from routers import budget
+from routers import transactions_api
 
 # Configure logging
 logging.basicConfig(
@@ -36,6 +39,9 @@ app.add_middleware(
 
 # Include routers
 app.include_router(lean.router)
+app.include_router(dashboard.router)
+app.include_router(budget.router)
+app.include_router(transactions_api.router)
 
 
 @app.get("/")

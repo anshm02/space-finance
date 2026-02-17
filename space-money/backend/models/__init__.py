@@ -18,7 +18,6 @@ from database import Base
 # Import all models for Alembic autodiscovery
 from models.user import (
     UserProfile,
-    UserDemographics,
     ConsentRecord,
     DataIngestionConfig,
     AccountStatus as UserAccountStatus,
@@ -31,7 +30,6 @@ from models.user import (
 
 from models.accounts import (
     UserAccount,
-    AccountBalance,
     CreditCardDetails,
     AccountType,
     AccountStatus
@@ -46,6 +44,20 @@ from models.system import (
     AuditLog,
     EventType,
     EntityType
+)
+
+from models.category_mappings import (
+    CategoryMapping,
+)
+
+from models.analytics import (
+    DerivedMonthlySummary,
+    DerivedCategorySummary,
+    AppBudget,
+    AppBudgetPeriod,
+    DerivedRecurringTransaction,
+    DerivedHealthScore,
+    DerivedHealthScoreDriver,
 )
 
 # Legacy models from old models.py for backward compatibility
@@ -76,7 +88,6 @@ __all__ = [
     "Base",
     # User schema
     "UserProfile",
-    "UserDemographics",
     "ConsentRecord",
     "DataIngestionConfig",
     "UserAccountStatus",
@@ -87,7 +98,6 @@ __all__ = [
     "SyncStatus",
     # Accounts schema
     "UserAccount",
-    "AccountBalance",
     "CreditCardDetails",
     "AccountType",
     "AccountStatus",
@@ -106,4 +116,14 @@ __all__ = [
     "LeanSyncLog",
     "BalanceHistory",
     "RecurringTransaction",
+    # App schema
+    "CategoryMapping",
+    # Analytics schema
+    "DerivedMonthlySummary",
+    "DerivedCategorySummary",
+    "AppBudget",
+    "AppBudgetPeriod",
+    "DerivedRecurringTransaction",
+    "DerivedHealthScore",
+    "DerivedHealthScoreDriver",
 ]

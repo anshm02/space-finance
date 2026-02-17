@@ -25,9 +25,10 @@ import logging
 
 # Import new models
 from models.user import UserProfile, DataIngestionConfig
-from models.accounts import UserAccount, AccountBalance, AccountType, AccountStatus
+from models.accounts import UserAccount, CreditCardDetails, AccountType, AccountStatus
 from models.transactions import RawTransaction, TransactionType
 from models.system import AuditLog, EventType, EntityType
+from services.analytics_service import on_transaction_sync
 
 logger = logging.getLogger(__name__)
 settings = get_settings()
@@ -179,6 +180,11 @@ class DataService:
                     await self.db.flush()
                     account_ids.append(new_account.account_id)
                     logger.info(f"Created account {lean_account_id[:8]}... | {account_data.get('name')} | {account_type.value}")
+                
+                # Handle credit card details if this is a CREDIT account
+                if account_type == AccountType.CREDIT and account_data.get("credit"):
+                    account_id = existing_account.account_id if existing_account else new_account.account_id
+                    await self._upsert_credit_card_details(account_id, account_data["credit"])
             
             except Exception as e:
                 logger.error(f"Failed to upsert account: {str(e)}")
@@ -186,15 +192,82 @@ class DataService:
         
         return account_ids
     
+    async def _upsert_credit_card_details(
+        self,
+        account_id: uuid.UUID,
+        credit_data: Dict[str, Any]
+    ):
+        """
+        Upsert credit card details for CREDIT accounts.
+        
+        Args:
+            account_id: Account ID
+            credit_data: Credit card data from Lean API
+        """
+        if not self.db:
+            return
+        
+        try:
+            # Check if credit card details already exist
+            result = await self.db.execute(
+                select(CreditCardDetails).where(CreditCardDetails.account_id == account_id)
+            )
+            existing_details = result.scalar_one_or_none()
+            
+            # Parse credit card fields
+            card_last_four = credit_data.get("card_number_last_four")
+            credit_limit = credit_data.get("limit")
+            due_date_str = credit_data.get("next_payment_due_date")
+            due_amount = credit_data.get("next_payment_due_amount")
+            
+            # Parse due date if provided
+            next_payment_due_date = None
+            if due_date_str:
+                try:
+                    # Lean API sends dates as YYYY-MM-DD
+                    next_payment_due_date = datetime.strptime(due_date_str, "%Y-%m-%d").date()
+                except ValueError:
+                    logger.warning(f"Invalid date format for next_payment_due_date: {due_date_str}")
+            
+            if existing_details:
+                # Update existing credit card details
+                if card_last_four:
+                    existing_details.card_last_four = card_last_four
+                if credit_limit is not None:
+                    existing_details.credit_limit = Decimal(str(credit_limit))
+                existing_details.next_payment_due_date = next_payment_due_date
+                if due_amount is not None:
+                    existing_details.next_payment_due_amount = Decimal(str(due_amount))
+                
+                logger.info(f"Updated credit card details for account {account_id}")
+            else:
+                # Create new credit card details
+                if credit_limit is None:
+                    logger.warning(f"Credit limit is required but missing for account {account_id}")
+                    return
+                
+                new_details = CreditCardDetails(
+                    account_id=account_id,
+                    card_last_four=card_last_four,  # Will be encrypted
+                    credit_limit=Decimal(str(credit_limit)),
+                    next_payment_due_date=next_payment_due_date,
+                    next_payment_due_amount=Decimal(str(due_amount)) if due_amount is not None else None
+                )
+                self.db.add(new_details)
+                logger.info(f"Created credit card details for account {account_id} | Limit: {credit_limit}")
+            
+            await self.db.flush()
+        
+        except Exception as e:
+            logger.error(f"Failed to upsert credit card details for {account_id}: {str(e)}")
+    
     async def _upsert_balance(
         self,
         account_id: uuid.UUID,
         balance_data: Dict[str, Any]
     ):
         """
-        Insert balance snapshot to database.
-        
-        Captures point-in-time balance for historical tracking.
+        Update balance in user_accounts table.
         
         Args:
             account_id: Account ID
@@ -211,19 +284,22 @@ class DataService:
                 logger.warning(f"No balance found in payload for account {account_id}")
                 return
             
-            # Create new balance snapshot with Lean data
-            balance_snapshot = AccountBalance(
-                account_id=account_id,
-                balance=Decimal(str(balance_amount)),
-                currency_code=payload.get("currency_code", "AED")
-                # snapshot_timestamp will auto-populate with server_default
+            # Update balance directly in user_accounts table
+            result = await self.db.execute(
+                select(UserAccount).where(UserAccount.account_id == account_id)
             )
-            self.db.add(balance_snapshot)
-            await self.db.flush()
-            logger.info(f"Balance snapshot: {account_id} | {balance_amount} {payload.get('currency_code', 'AED')}")
+            account = result.scalar_one_or_none()
+            
+            if account:
+                account.current_balance = Decimal(str(balance_amount))
+                account.balance_updated_at = datetime.utcnow()
+                await self.db.flush()
+                logger.info(f"Balance updated: {account_id} | {balance_amount} {payload.get('currency_code', 'AED')}")
+            else:
+                logger.warning(f"Account {account_id} not found for balance update")
         
         except Exception as e:
-            logger.error(f"Failed to upsert balance for {account_id}: {str(e)}")
+            logger.error(f"Failed to update balance for {account_id}: {str(e)}")
     
     async def _upsert_transactions(
         self,
@@ -281,15 +357,18 @@ class DataService:
                 # Negative amount = DEBIT (outgoing), Positive = CREDIT (incoming)
                 txn_type = TransactionType.DEBIT if amount < 0 else TransactionType.CREDIT
                 
-                # Parse date
-                txn_timestamp = txn_data.get("timestamp")
-                if txn_timestamp:
+                # Parse timestamp and date
+                txn_timestamp_str = txn_data.get("timestamp")
+                txn_timestamp = None
+                txn_date = date.today()
+                
+                if txn_timestamp_str:
                     try:
-                        txn_date = datetime.fromisoformat(txn_timestamp.replace('Z', '+00:00')).date()
+                        # Parse full ISO timestamp
+                        txn_timestamp = datetime.fromisoformat(txn_timestamp_str.replace('Z', '+00:00'))
+                        txn_date = txn_timestamp.date()
                     except ValueError:
-                        txn_date = date.today()
-                else:
-                    txn_date = date.today()
+                        logger.warning(f"Invalid timestamp format: {txn_timestamp_str}")
                 
                 insights = txn_data.get("insights", {})
                 
@@ -298,6 +377,7 @@ class DataService:
                     account_id=account_id,
                     lean_transaction_id=lean_uuid,
                     transaction_date=txn_date,
+                    transaction_timestamp=txn_timestamp,  # Store full timestamp
                     amount=abs(amount),
                     currency_code=txn_data.get("currency_code", "AED"),
                     # Description - will be encrypted
@@ -620,6 +700,19 @@ class DataService:
             try:
                 await self.db.commit()
                 logger.info(f"Committed database changes for entity {entity_id}")
+                
+                # Trigger full analytics pipeline
+                if user_id:
+                    try:
+                        logger.info(f"Triggering analytics pipeline for user {user_id}...")
+                        pipeline_result = await on_transaction_sync(self.db, str(user_id))
+                        if pipeline_result.get("success"):
+                            logger.info(f"Analytics pipeline completed: score={pipeline_result.get('composite_score')}")
+                        else:
+                            logger.warning(f"Analytics pipeline completed with errors: {pipeline_result.get('error')}")
+                    except Exception as e:
+                        logger.error(f"Failed to run analytics pipeline: {str(e)}")
+                        # Don't fail the sync request, just log error
             except Exception as e:
                 logger.error(f"Failed to commit database changes: {str(e)}")
                 await self.db.rollback()

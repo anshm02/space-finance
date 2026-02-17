@@ -1,0 +1,20 @@
+{
+  "status": "OK",
+  "results_id": "a4a2a289-74a0-4b41-a6c0-d33de82dc72e",
+  "message": "Data successfully retrieved",
+  "meta": null,
+  "timestamp": "2026-02-12T23:29:51.016619454Z",
+  "status_detail": null,
+  "refreshed_at": "2026-02-12T23:29:43.891Z",
+  "type": "identities",
+  "payload": {
+    "type": "identity",
+    "address": "11, Frami, Frami, 55555, 66666, Spring, UAE",
+    "birth_date": "2018-01-27",
+    "email_address": "evette.considine@gmail.com",
+    "full_name": "Genevie Nguyet Boyle",
+    "gender": "NOT_SPECIFIED",
+    "mobile_number": "+9714) 7418751",
+    "national_identity_number": "189370364753"
+  }
+}
