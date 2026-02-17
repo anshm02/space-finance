@@ -9,6 +9,12 @@ A personal finance management (PFM) tool to track spending, manage budgets, and 
 <img width="175" height="433" alt="IMG_5970" src="https://github.com/user-attachments/assets/51c589fe-ffd7-453d-ab51-fa8cb275060b" />
 <img width="175" height="433" alt="IMG_5967" src="https://github.com/user-attachments/assets/16e1ca44-e1f2-4147-b7d4-f5463ea9444d" />
 
+## Tech Stack
+**Languages:** Python, TypeScript  
+**Backend:** FastAPI, SQLAlchemy, Pydantic  
+**Database:** PostgreSQL, AsyncPG  
+**Mobile:** React Native, Expo  
+**Infrastructure:** AWS (Boto3)
 
 
 ## Quick Start
